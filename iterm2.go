@@ -42,6 +42,7 @@ func (e MessageIDError) Error() string {
 
 // ITerm2 holds the context for a new ITerm client
 type ITerm2 struct {
+	notifier       Notifier
 	conn           *websocket.Conn
 	ids            <-chan int64
 	inFlyResponses map[int64]chan *api.ServerOriginatedMessage
@@ -170,6 +171,10 @@ func (I *ITerm2) dispatchOneMessage(t int, mb []byte) {
 		err := proto.Unmarshal(mb, &m)
 		if err != nil {
 			I.logger.Errorf("failed to de-serialize message: %s, ignoting it", err)
+			return
+		}
+		if m.GetNotification() != nil {
+			I.dispatchNotification(m.GetNotification())
 			return
 		}
 		c, err := I.getResponseChannel(m.GetId())

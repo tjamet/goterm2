@@ -18,7 +18,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.GoGoProtoPackageIsVersion2 // please upgrade the proto package
+const _ = proto.GoGoProtoPackageIsVersion3 // please upgrade the proto package
 
 type SelectionMode int32
 
@@ -1992,103 +1992,103 @@ type isClientOriginatedMessage_Submessage interface {
 }
 
 type ClientOriginatedMessage_GetBufferRequest struct {
-	GetBufferRequest *GetBufferRequest `protobuf:"bytes,100,opt,name=get_buffer_request,json=getBufferRequest,oneof"`
+	GetBufferRequest *GetBufferRequest `protobuf:"bytes,100,opt,name=get_buffer_request,json=getBufferRequest,oneof" json:"get_buffer_request,omitempty"`
 }
 type ClientOriginatedMessage_GetPromptRequest struct {
-	GetPromptRequest *GetPromptRequest `protobuf:"bytes,101,opt,name=get_prompt_request,json=getPromptRequest,oneof"`
+	GetPromptRequest *GetPromptRequest `protobuf:"bytes,101,opt,name=get_prompt_request,json=getPromptRequest,oneof" json:"get_prompt_request,omitempty"`
 }
 type ClientOriginatedMessage_TransactionRequest struct {
-	TransactionRequest *TransactionRequest `protobuf:"bytes,102,opt,name=transaction_request,json=transactionRequest,oneof"`
+	TransactionRequest *TransactionRequest `protobuf:"bytes,102,opt,name=transaction_request,json=transactionRequest,oneof" json:"transaction_request,omitempty"`
 }
 type ClientOriginatedMessage_NotificationRequest struct {
-	NotificationRequest *NotificationRequest `protobuf:"bytes,103,opt,name=notification_request,json=notificationRequest,oneof"`
+	NotificationRequest *NotificationRequest `protobuf:"bytes,103,opt,name=notification_request,json=notificationRequest,oneof" json:"notification_request,omitempty"`
 }
 type ClientOriginatedMessage_RegisterToolRequest struct {
-	RegisterToolRequest *RegisterToolRequest `protobuf:"bytes,104,opt,name=register_tool_request,json=registerToolRequest,oneof"`
+	RegisterToolRequest *RegisterToolRequest `protobuf:"bytes,104,opt,name=register_tool_request,json=registerToolRequest,oneof" json:"register_tool_request,omitempty"`
 }
 type ClientOriginatedMessage_SetProfilePropertyRequest struct {
-	SetProfilePropertyRequest *SetProfilePropertyRequest `protobuf:"bytes,105,opt,name=set_profile_property_request,json=setProfilePropertyRequest,oneof"`
+	SetProfilePropertyRequest *SetProfilePropertyRequest `protobuf:"bytes,105,opt,name=set_profile_property_request,json=setProfilePropertyRequest,oneof" json:"set_profile_property_request,omitempty"`
 }
 type ClientOriginatedMessage_ListSessionsRequest struct {
-	ListSessionsRequest *ListSessionsRequest `protobuf:"bytes,106,opt,name=list_sessions_request,json=listSessionsRequest,oneof"`
+	ListSessionsRequest *ListSessionsRequest `protobuf:"bytes,106,opt,name=list_sessions_request,json=listSessionsRequest,oneof" json:"list_sessions_request,omitempty"`
 }
 type ClientOriginatedMessage_SendTextRequest struct {
-	SendTextRequest *SendTextRequest `protobuf:"bytes,107,opt,name=send_text_request,json=sendTextRequest,oneof"`
+	SendTextRequest *SendTextRequest `protobuf:"bytes,107,opt,name=send_text_request,json=sendTextRequest,oneof" json:"send_text_request,omitempty"`
 }
 type ClientOriginatedMessage_CreateTabRequest struct {
-	CreateTabRequest *CreateTabRequest `protobuf:"bytes,108,opt,name=create_tab_request,json=createTabRequest,oneof"`
+	CreateTabRequest *CreateTabRequest `protobuf:"bytes,108,opt,name=create_tab_request,json=createTabRequest,oneof" json:"create_tab_request,omitempty"`
 }
 type ClientOriginatedMessage_SplitPaneRequest struct {
-	SplitPaneRequest *SplitPaneRequest `protobuf:"bytes,109,opt,name=split_pane_request,json=splitPaneRequest,oneof"`
+	SplitPaneRequest *SplitPaneRequest `protobuf:"bytes,109,opt,name=split_pane_request,json=splitPaneRequest,oneof" json:"split_pane_request,omitempty"`
 }
 type ClientOriginatedMessage_GetProfilePropertyRequest struct {
-	GetProfilePropertyRequest *GetProfilePropertyRequest `protobuf:"bytes,110,opt,name=get_profile_property_request,json=getProfilePropertyRequest,oneof"`
+	GetProfilePropertyRequest *GetProfilePropertyRequest `protobuf:"bytes,110,opt,name=get_profile_property_request,json=getProfilePropertyRequest,oneof" json:"get_profile_property_request,omitempty"`
 }
 type ClientOriginatedMessage_SetPropertyRequest struct {
-	SetPropertyRequest *SetPropertyRequest `protobuf:"bytes,111,opt,name=set_property_request,json=setPropertyRequest,oneof"`
+	SetPropertyRequest *SetPropertyRequest `protobuf:"bytes,111,opt,name=set_property_request,json=setPropertyRequest,oneof" json:"set_property_request,omitempty"`
 }
 type ClientOriginatedMessage_GetPropertyRequest struct {
-	GetPropertyRequest *GetPropertyRequest `protobuf:"bytes,112,opt,name=get_property_request,json=getPropertyRequest,oneof"`
+	GetPropertyRequest *GetPropertyRequest `protobuf:"bytes,112,opt,name=get_property_request,json=getPropertyRequest,oneof" json:"get_property_request,omitempty"`
 }
 type ClientOriginatedMessage_InjectRequest struct {
-	InjectRequest *InjectRequest `protobuf:"bytes,113,opt,name=inject_request,json=injectRequest,oneof"`
+	InjectRequest *InjectRequest `protobuf:"bytes,113,opt,name=inject_request,json=injectRequest,oneof" json:"inject_request,omitempty"`
 }
 type ClientOriginatedMessage_ActivateRequest struct {
-	ActivateRequest *ActivateRequest `protobuf:"bytes,114,opt,name=activate_request,json=activateRequest,oneof"`
+	ActivateRequest *ActivateRequest `protobuf:"bytes,114,opt,name=activate_request,json=activateRequest,oneof" json:"activate_request,omitempty"`
 }
 type ClientOriginatedMessage_VariableRequest struct {
-	VariableRequest *VariableRequest `protobuf:"bytes,115,opt,name=variable_request,json=variableRequest,oneof"`
+	VariableRequest *VariableRequest `protobuf:"bytes,115,opt,name=variable_request,json=variableRequest,oneof" json:"variable_request,omitempty"`
 }
 type ClientOriginatedMessage_SavedArrangementRequest struct {
-	SavedArrangementRequest *SavedArrangementRequest `protobuf:"bytes,116,opt,name=saved_arrangement_request,json=savedArrangementRequest,oneof"`
+	SavedArrangementRequest *SavedArrangementRequest `protobuf:"bytes,116,opt,name=saved_arrangement_request,json=savedArrangementRequest,oneof" json:"saved_arrangement_request,omitempty"`
 }
 type ClientOriginatedMessage_FocusRequest struct {
-	FocusRequest *FocusRequest `protobuf:"bytes,117,opt,name=focus_request,json=focusRequest,oneof"`
+	FocusRequest *FocusRequest `protobuf:"bytes,117,opt,name=focus_request,json=focusRequest,oneof" json:"focus_request,omitempty"`
 }
 type ClientOriginatedMessage_ListProfilesRequest struct {
-	ListProfilesRequest *ListProfilesRequest `protobuf:"bytes,118,opt,name=list_profiles_request,json=listProfilesRequest,oneof"`
+	ListProfilesRequest *ListProfilesRequest `protobuf:"bytes,118,opt,name=list_profiles_request,json=listProfilesRequest,oneof" json:"list_profiles_request,omitempty"`
 }
 type ClientOriginatedMessage_ServerOriginatedRpcResultRequest struct {
-	ServerOriginatedRpcResultRequest *ServerOriginatedRPCResultRequest `protobuf:"bytes,119,opt,name=server_originated_rpc_result_request,json=serverOriginatedRpcResultRequest,oneof"`
+	ServerOriginatedRpcResultRequest *ServerOriginatedRPCResultRequest `protobuf:"bytes,119,opt,name=server_originated_rpc_result_request,json=serverOriginatedRpcResultRequest,oneof" json:"server_originated_rpc_result_request,omitempty"`
 }
 type ClientOriginatedMessage_RestartSessionRequest struct {
-	RestartSessionRequest *RestartSessionRequest `protobuf:"bytes,120,opt,name=restart_session_request,json=restartSessionRequest,oneof"`
+	RestartSessionRequest *RestartSessionRequest `protobuf:"bytes,120,opt,name=restart_session_request,json=restartSessionRequest,oneof" json:"restart_session_request,omitempty"`
 }
 type ClientOriginatedMessage_MenuItemRequest struct {
-	MenuItemRequest *MenuItemRequest `protobuf:"bytes,121,opt,name=menu_item_request,json=menuItemRequest,oneof"`
+	MenuItemRequest *MenuItemRequest `protobuf:"bytes,121,opt,name=menu_item_request,json=menuItemRequest,oneof" json:"menu_item_request,omitempty"`
 }
 type ClientOriginatedMessage_SetTabLayoutRequest struct {
-	SetTabLayoutRequest *SetTabLayoutRequest `protobuf:"bytes,122,opt,name=set_tab_layout_request,json=setTabLayoutRequest,oneof"`
+	SetTabLayoutRequest *SetTabLayoutRequest `protobuf:"bytes,122,opt,name=set_tab_layout_request,json=setTabLayoutRequest,oneof" json:"set_tab_layout_request,omitempty"`
 }
 type ClientOriginatedMessage_GetBroadcastDomainsRequest struct {
-	GetBroadcastDomainsRequest *GetBroadcastDomainsRequest `protobuf:"bytes,123,opt,name=get_broadcast_domains_request,json=getBroadcastDomainsRequest,oneof"`
+	GetBroadcastDomainsRequest *GetBroadcastDomainsRequest `protobuf:"bytes,123,opt,name=get_broadcast_domains_request,json=getBroadcastDomainsRequest,oneof" json:"get_broadcast_domains_request,omitempty"`
 }
 type ClientOriginatedMessage_TmuxRequest struct {
-	TmuxRequest *TmuxRequest `protobuf:"bytes,124,opt,name=tmux_request,json=tmuxRequest,oneof"`
+	TmuxRequest *TmuxRequest `protobuf:"bytes,124,opt,name=tmux_request,json=tmuxRequest,oneof" json:"tmux_request,omitempty"`
 }
 type ClientOriginatedMessage_ReorderTabsRequest struct {
-	ReorderTabsRequest *ReorderTabsRequest `protobuf:"bytes,125,opt,name=reorder_tabs_request,json=reorderTabsRequest,oneof"`
+	ReorderTabsRequest *ReorderTabsRequest `protobuf:"bytes,125,opt,name=reorder_tabs_request,json=reorderTabsRequest,oneof" json:"reorder_tabs_request,omitempty"`
 }
 type ClientOriginatedMessage_PreferencesRequest struct {
-	PreferencesRequest *PreferencesRequest `protobuf:"bytes,126,opt,name=preferences_request,json=preferencesRequest,oneof"`
+	PreferencesRequest *PreferencesRequest `protobuf:"bytes,126,opt,name=preferences_request,json=preferencesRequest,oneof" json:"preferences_request,omitempty"`
 }
 type ClientOriginatedMessage_ColorPresetRequest struct {
-	ColorPresetRequest *ColorPresetRequest `protobuf:"bytes,127,opt,name=color_preset_request,json=colorPresetRequest,oneof"`
+	ColorPresetRequest *ColorPresetRequest `protobuf:"bytes,127,opt,name=color_preset_request,json=colorPresetRequest,oneof" json:"color_preset_request,omitempty"`
 }
 type ClientOriginatedMessage_SelectionRequest struct {
-	SelectionRequest *SelectionRequest `protobuf:"bytes,128,opt,name=selection_request,json=selectionRequest,oneof"`
+	SelectionRequest *SelectionRequest `protobuf:"bytes,128,opt,name=selection_request,json=selectionRequest,oneof" json:"selection_request,omitempty"`
 }
 type ClientOriginatedMessage_StatusBarComponentRequest struct {
-	StatusBarComponentRequest *StatusBarComponentRequest `protobuf:"bytes,129,opt,name=status_bar_component_request,json=statusBarComponentRequest,oneof"`
+	StatusBarComponentRequest *StatusBarComponentRequest `protobuf:"bytes,129,opt,name=status_bar_component_request,json=statusBarComponentRequest,oneof" json:"status_bar_component_request,omitempty"`
 }
 type ClientOriginatedMessage_SetBroadcastDomainsRequest struct {
-	SetBroadcastDomainsRequest *SetBroadcastDomainsRequest `protobuf:"bytes,130,opt,name=set_broadcast_domains_request,json=setBroadcastDomainsRequest,oneof"`
+	SetBroadcastDomainsRequest *SetBroadcastDomainsRequest `protobuf:"bytes,130,opt,name=set_broadcast_domains_request,json=setBroadcastDomainsRequest,oneof" json:"set_broadcast_domains_request,omitempty"`
 }
 type ClientOriginatedMessage_CloseRequest struct {
-	CloseRequest *CloseRequest `protobuf:"bytes,131,opt,name=close_request,json=closeRequest,oneof"`
+	CloseRequest *CloseRequest `protobuf:"bytes,131,opt,name=close_request,json=closeRequest,oneof" json:"close_request,omitempty"`
 }
 type ClientOriginatedMessage_InvokeFunctionRequest struct {
-	InvokeFunctionRequest *InvokeFunctionRequest `protobuf:"bytes,132,opt,name=invoke_function_request,json=invokeFunctionRequest,oneof"`
+	InvokeFunctionRequest *InvokeFunctionRequest `protobuf:"bytes,132,opt,name=invoke_function_request,json=invokeFunctionRequest,oneof" json:"invoke_function_request,omitempty"`
 }
 
 func (*ClientOriginatedMessage_GetBufferRequest) isClientOriginatedMessage_Submessage()          {}
@@ -2371,9 +2371,9 @@ func (m *ClientOriginatedMessage) GetInvokeFunctionRequest() *InvokeFunctionRequ
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*ClientOriginatedMessage) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _ClientOriginatedMessage_OneofMarshaler, _ClientOriginatedMessage_OneofUnmarshaler, _ClientOriginatedMessage_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*ClientOriginatedMessage) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*ClientOriginatedMessage_GetBufferRequest)(nil),
 		(*ClientOriginatedMessage_GetPromptRequest)(nil),
 		(*ClientOriginatedMessage_TransactionRequest)(nil),
@@ -2408,630 +2408,6 @@ func (*ClientOriginatedMessage) XXX_OneofFuncs() (func(msg proto.Message, b *pro
 		(*ClientOriginatedMessage_CloseRequest)(nil),
 		(*ClientOriginatedMessage_InvokeFunctionRequest)(nil),
 	}
-}
-
-func _ClientOriginatedMessage_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*ClientOriginatedMessage)
-	// submessage
-	switch x := m.Submessage.(type) {
-	case *ClientOriginatedMessage_GetBufferRequest:
-		_ = b.EncodeVarint(100<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetBufferRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_GetPromptRequest:
-		_ = b.EncodeVarint(101<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPromptRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_TransactionRequest:
-		_ = b.EncodeVarint(102<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.TransactionRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_NotificationRequest:
-		_ = b.EncodeVarint(103<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.NotificationRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_RegisterToolRequest:
-		_ = b.EncodeVarint(104<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.RegisterToolRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SetProfilePropertyRequest:
-		_ = b.EncodeVarint(105<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetProfilePropertyRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_ListSessionsRequest:
-		_ = b.EncodeVarint(106<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListSessionsRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SendTextRequest:
-		_ = b.EncodeVarint(107<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SendTextRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_CreateTabRequest:
-		_ = b.EncodeVarint(108<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CreateTabRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SplitPaneRequest:
-		_ = b.EncodeVarint(109<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SplitPaneRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_GetProfilePropertyRequest:
-		_ = b.EncodeVarint(110<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetProfilePropertyRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SetPropertyRequest:
-		_ = b.EncodeVarint(111<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetPropertyRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_GetPropertyRequest:
-		_ = b.EncodeVarint(112<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPropertyRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_InjectRequest:
-		_ = b.EncodeVarint(113<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.InjectRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_ActivateRequest:
-		_ = b.EncodeVarint(114<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ActivateRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_VariableRequest:
-		_ = b.EncodeVarint(115<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.VariableRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SavedArrangementRequest:
-		_ = b.EncodeVarint(116<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SavedArrangementRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_FocusRequest:
-		_ = b.EncodeVarint(117<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.FocusRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_ListProfilesRequest:
-		_ = b.EncodeVarint(118<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListProfilesRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_ServerOriginatedRpcResultRequest:
-		_ = b.EncodeVarint(119<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ServerOriginatedRpcResultRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_RestartSessionRequest:
-		_ = b.EncodeVarint(120<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.RestartSessionRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_MenuItemRequest:
-		_ = b.EncodeVarint(121<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.MenuItemRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SetTabLayoutRequest:
-		_ = b.EncodeVarint(122<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetTabLayoutRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_GetBroadcastDomainsRequest:
-		_ = b.EncodeVarint(123<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetBroadcastDomainsRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_TmuxRequest:
-		_ = b.EncodeVarint(124<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.TmuxRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_ReorderTabsRequest:
-		_ = b.EncodeVarint(125<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ReorderTabsRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_PreferencesRequest:
-		_ = b.EncodeVarint(126<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.PreferencesRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_ColorPresetRequest:
-		_ = b.EncodeVarint(127<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ColorPresetRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SelectionRequest:
-		_ = b.EncodeVarint(128<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SelectionRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_StatusBarComponentRequest:
-		_ = b.EncodeVarint(129<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.StatusBarComponentRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_SetBroadcastDomainsRequest:
-		_ = b.EncodeVarint(130<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetBroadcastDomainsRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_CloseRequest:
-		_ = b.EncodeVarint(131<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CloseRequest); err != nil {
-			return err
-		}
-	case *ClientOriginatedMessage_InvokeFunctionRequest:
-		_ = b.EncodeVarint(132<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.InvokeFunctionRequest); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("ClientOriginatedMessage.Submessage has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _ClientOriginatedMessage_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*ClientOriginatedMessage)
-	switch tag {
-	case 100: // submessage.get_buffer_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetBufferRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_GetBufferRequest{msg}
-		return true, err
-	case 101: // submessage.get_prompt_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetPromptRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_GetPromptRequest{msg}
-		return true, err
-	case 102: // submessage.transaction_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TransactionRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_TransactionRequest{msg}
-		return true, err
-	case 103: // submessage.notification_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(NotificationRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_NotificationRequest{msg}
-		return true, err
-	case 104: // submessage.register_tool_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RegisterToolRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_RegisterToolRequest{msg}
-		return true, err
-	case 105: // submessage.set_profile_property_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetProfilePropertyRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SetProfilePropertyRequest{msg}
-		return true, err
-	case 106: // submessage.list_sessions_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ListSessionsRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_ListSessionsRequest{msg}
-		return true, err
-	case 107: // submessage.send_text_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SendTextRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SendTextRequest{msg}
-		return true, err
-	case 108: // submessage.create_tab_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CreateTabRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_CreateTabRequest{msg}
-		return true, err
-	case 109: // submessage.split_pane_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SplitPaneRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SplitPaneRequest{msg}
-		return true, err
-	case 110: // submessage.get_profile_property_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetProfilePropertyRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_GetProfilePropertyRequest{msg}
-		return true, err
-	case 111: // submessage.set_property_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetPropertyRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SetPropertyRequest{msg}
-		return true, err
-	case 112: // submessage.get_property_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetPropertyRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_GetPropertyRequest{msg}
-		return true, err
-	case 113: // submessage.inject_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InjectRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_InjectRequest{msg}
-		return true, err
-	case 114: // submessage.activate_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ActivateRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_ActivateRequest{msg}
-		return true, err
-	case 115: // submessage.variable_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(VariableRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_VariableRequest{msg}
-		return true, err
-	case 116: // submessage.saved_arrangement_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SavedArrangementRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SavedArrangementRequest{msg}
-		return true, err
-	case 117: // submessage.focus_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(FocusRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_FocusRequest{msg}
-		return true, err
-	case 118: // submessage.list_profiles_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ListProfilesRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_ListProfilesRequest{msg}
-		return true, err
-	case 119: // submessage.server_originated_rpc_result_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ServerOriginatedRPCResultRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_ServerOriginatedRpcResultRequest{msg}
-		return true, err
-	case 120: // submessage.restart_session_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RestartSessionRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_RestartSessionRequest{msg}
-		return true, err
-	case 121: // submessage.menu_item_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(MenuItemRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_MenuItemRequest{msg}
-		return true, err
-	case 122: // submessage.set_tab_layout_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetTabLayoutRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SetTabLayoutRequest{msg}
-		return true, err
-	case 123: // submessage.get_broadcast_domains_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetBroadcastDomainsRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_GetBroadcastDomainsRequest{msg}
-		return true, err
-	case 124: // submessage.tmux_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_TmuxRequest{msg}
-		return true, err
-	case 125: // submessage.reorder_tabs_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ReorderTabsRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_ReorderTabsRequest{msg}
-		return true, err
-	case 126: // submessage.preferences_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_PreferencesRequest{msg}
-		return true, err
-	case 127: // submessage.color_preset_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ColorPresetRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_ColorPresetRequest{msg}
-		return true, err
-	case 128: // submessage.selection_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SelectionRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SelectionRequest{msg}
-		return true, err
-	case 129: // submessage.status_bar_component_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(StatusBarComponentRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_StatusBarComponentRequest{msg}
-		return true, err
-	case 130: // submessage.set_broadcast_domains_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetBroadcastDomainsRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_SetBroadcastDomainsRequest{msg}
-		return true, err
-	case 131: // submessage.close_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CloseRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_CloseRequest{msg}
-		return true, err
-	case 132: // submessage.invoke_function_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionRequest)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ClientOriginatedMessage_InvokeFunctionRequest{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _ClientOriginatedMessage_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*ClientOriginatedMessage)
-	// submessage
-	switch x := m.Submessage.(type) {
-	case *ClientOriginatedMessage_GetBufferRequest:
-		s := proto.Size(x.GetBufferRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_GetPromptRequest:
-		s := proto.Size(x.GetPromptRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_TransactionRequest:
-		s := proto.Size(x.TransactionRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_NotificationRequest:
-		s := proto.Size(x.NotificationRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_RegisterToolRequest:
-		s := proto.Size(x.RegisterToolRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SetProfilePropertyRequest:
-		s := proto.Size(x.SetProfilePropertyRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_ListSessionsRequest:
-		s := proto.Size(x.ListSessionsRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SendTextRequest:
-		s := proto.Size(x.SendTextRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_CreateTabRequest:
-		s := proto.Size(x.CreateTabRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SplitPaneRequest:
-		s := proto.Size(x.SplitPaneRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_GetProfilePropertyRequest:
-		s := proto.Size(x.GetProfilePropertyRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SetPropertyRequest:
-		s := proto.Size(x.SetPropertyRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_GetPropertyRequest:
-		s := proto.Size(x.GetPropertyRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_InjectRequest:
-		s := proto.Size(x.InjectRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_ActivateRequest:
-		s := proto.Size(x.ActivateRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_VariableRequest:
-		s := proto.Size(x.VariableRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SavedArrangementRequest:
-		s := proto.Size(x.SavedArrangementRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_FocusRequest:
-		s := proto.Size(x.FocusRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_ListProfilesRequest:
-		s := proto.Size(x.ListProfilesRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_ServerOriginatedRpcResultRequest:
-		s := proto.Size(x.ServerOriginatedRpcResultRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_RestartSessionRequest:
-		s := proto.Size(x.RestartSessionRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_MenuItemRequest:
-		s := proto.Size(x.MenuItemRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SetTabLayoutRequest:
-		s := proto.Size(x.SetTabLayoutRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_GetBroadcastDomainsRequest:
-		s := proto.Size(x.GetBroadcastDomainsRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_TmuxRequest:
-		s := proto.Size(x.TmuxRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_ReorderTabsRequest:
-		s := proto.Size(x.ReorderTabsRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_PreferencesRequest:
-		s := proto.Size(x.PreferencesRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_ColorPresetRequest:
-		s := proto.Size(x.ColorPresetRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SelectionRequest:
-		s := proto.Size(x.SelectionRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_StatusBarComponentRequest:
-		s := proto.Size(x.StatusBarComponentRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_SetBroadcastDomainsRequest:
-		s := proto.Size(x.SetBroadcastDomainsRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_CloseRequest:
-		s := proto.Size(x.CloseRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ClientOriginatedMessage_InvokeFunctionRequest:
-		s := proto.Size(x.InvokeFunctionRequest)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 // All responses are wrapped in this message. This encoded message is the entirety of the payload
@@ -3111,109 +2487,109 @@ type isServerOriginatedMessage_Submessage interface {
 }
 
 type ServerOriginatedMessage_Error struct {
-	Error string `protobuf:"bytes,2,opt,name=error,oneof"`
+	Error string `protobuf:"bytes,2,opt,name=error,oneof" json:"error,omitempty"`
 }
 type ServerOriginatedMessage_GetBufferResponse struct {
-	GetBufferResponse *GetBufferResponse `protobuf:"bytes,100,opt,name=get_buffer_response,json=getBufferResponse,oneof"`
+	GetBufferResponse *GetBufferResponse `protobuf:"bytes,100,opt,name=get_buffer_response,json=getBufferResponse,oneof" json:"get_buffer_response,omitempty"`
 }
 type ServerOriginatedMessage_GetPromptResponse struct {
-	GetPromptResponse *GetPromptResponse `protobuf:"bytes,101,opt,name=get_prompt_response,json=getPromptResponse,oneof"`
+	GetPromptResponse *GetPromptResponse `protobuf:"bytes,101,opt,name=get_prompt_response,json=getPromptResponse,oneof" json:"get_prompt_response,omitempty"`
 }
 type ServerOriginatedMessage_TransactionResponse struct {
-	TransactionResponse *TransactionResponse `protobuf:"bytes,102,opt,name=transaction_response,json=transactionResponse,oneof"`
+	TransactionResponse *TransactionResponse `protobuf:"bytes,102,opt,name=transaction_response,json=transactionResponse,oneof" json:"transaction_response,omitempty"`
 }
 type ServerOriginatedMessage_NotificationResponse struct {
-	NotificationResponse *NotificationResponse `protobuf:"bytes,103,opt,name=notification_response,json=notificationResponse,oneof"`
+	NotificationResponse *NotificationResponse `protobuf:"bytes,103,opt,name=notification_response,json=notificationResponse,oneof" json:"notification_response,omitempty"`
 }
 type ServerOriginatedMessage_RegisterToolResponse struct {
-	RegisterToolResponse *RegisterToolResponse `protobuf:"bytes,104,opt,name=register_tool_response,json=registerToolResponse,oneof"`
+	RegisterToolResponse *RegisterToolResponse `protobuf:"bytes,104,opt,name=register_tool_response,json=registerToolResponse,oneof" json:"register_tool_response,omitempty"`
 }
 type ServerOriginatedMessage_SetProfilePropertyResponse struct {
-	SetProfilePropertyResponse *SetProfilePropertyResponse `protobuf:"bytes,105,opt,name=set_profile_property_response,json=setProfilePropertyResponse,oneof"`
+	SetProfilePropertyResponse *SetProfilePropertyResponse `protobuf:"bytes,105,opt,name=set_profile_property_response,json=setProfilePropertyResponse,oneof" json:"set_profile_property_response,omitempty"`
 }
 type ServerOriginatedMessage_ListSessionsResponse struct {
-	ListSessionsResponse *ListSessionsResponse `protobuf:"bytes,106,opt,name=list_sessions_response,json=listSessionsResponse,oneof"`
+	ListSessionsResponse *ListSessionsResponse `protobuf:"bytes,106,opt,name=list_sessions_response,json=listSessionsResponse,oneof" json:"list_sessions_response,omitempty"`
 }
 type ServerOriginatedMessage_SendTextResponse struct {
-	SendTextResponse *SendTextResponse `protobuf:"bytes,107,opt,name=send_text_response,json=sendTextResponse,oneof"`
+	SendTextResponse *SendTextResponse `protobuf:"bytes,107,opt,name=send_text_response,json=sendTextResponse,oneof" json:"send_text_response,omitempty"`
 }
 type ServerOriginatedMessage_CreateTabResponse struct {
-	CreateTabResponse *CreateTabResponse `protobuf:"bytes,108,opt,name=create_tab_response,json=createTabResponse,oneof"`
+	CreateTabResponse *CreateTabResponse `protobuf:"bytes,108,opt,name=create_tab_response,json=createTabResponse,oneof" json:"create_tab_response,omitempty"`
 }
 type ServerOriginatedMessage_SplitPaneResponse struct {
-	SplitPaneResponse *SplitPaneResponse `protobuf:"bytes,109,opt,name=split_pane_response,json=splitPaneResponse,oneof"`
+	SplitPaneResponse *SplitPaneResponse `protobuf:"bytes,109,opt,name=split_pane_response,json=splitPaneResponse,oneof" json:"split_pane_response,omitempty"`
 }
 type ServerOriginatedMessage_GetProfilePropertyResponse struct {
-	GetProfilePropertyResponse *GetProfilePropertyResponse `protobuf:"bytes,110,opt,name=get_profile_property_response,json=getProfilePropertyResponse,oneof"`
+	GetProfilePropertyResponse *GetProfilePropertyResponse `protobuf:"bytes,110,opt,name=get_profile_property_response,json=getProfilePropertyResponse,oneof" json:"get_profile_property_response,omitempty"`
 }
 type ServerOriginatedMessage_SetPropertyResponse struct {
-	SetPropertyResponse *SetPropertyResponse `protobuf:"bytes,111,opt,name=set_property_response,json=setPropertyResponse,oneof"`
+	SetPropertyResponse *SetPropertyResponse `protobuf:"bytes,111,opt,name=set_property_response,json=setPropertyResponse,oneof" json:"set_property_response,omitempty"`
 }
 type ServerOriginatedMessage_GetPropertyResponse struct {
-	GetPropertyResponse *GetPropertyResponse `protobuf:"bytes,112,opt,name=get_property_response,json=getPropertyResponse,oneof"`
+	GetPropertyResponse *GetPropertyResponse `protobuf:"bytes,112,opt,name=get_property_response,json=getPropertyResponse,oneof" json:"get_property_response,omitempty"`
 }
 type ServerOriginatedMessage_InjectResponse struct {
-	InjectResponse *InjectResponse `protobuf:"bytes,113,opt,name=inject_response,json=injectResponse,oneof"`
+	InjectResponse *InjectResponse `protobuf:"bytes,113,opt,name=inject_response,json=injectResponse,oneof" json:"inject_response,omitempty"`
 }
 type ServerOriginatedMessage_ActivateResponse struct {
-	ActivateResponse *ActivateResponse `protobuf:"bytes,114,opt,name=activate_response,json=activateResponse,oneof"`
+	ActivateResponse *ActivateResponse `protobuf:"bytes,114,opt,name=activate_response,json=activateResponse,oneof" json:"activate_response,omitempty"`
 }
 type ServerOriginatedMessage_VariableResponse struct {
-	VariableResponse *VariableResponse `protobuf:"bytes,115,opt,name=variable_response,json=variableResponse,oneof"`
+	VariableResponse *VariableResponse `protobuf:"bytes,115,opt,name=variable_response,json=variableResponse,oneof" json:"variable_response,omitempty"`
 }
 type ServerOriginatedMessage_SavedArrangementResponse struct {
-	SavedArrangementResponse *SavedArrangementResponse `protobuf:"bytes,116,opt,name=saved_arrangement_response,json=savedArrangementResponse,oneof"`
+	SavedArrangementResponse *SavedArrangementResponse `protobuf:"bytes,116,opt,name=saved_arrangement_response,json=savedArrangementResponse,oneof" json:"saved_arrangement_response,omitempty"`
 }
 type ServerOriginatedMessage_FocusResponse struct {
-	FocusResponse *FocusResponse `protobuf:"bytes,117,opt,name=focus_response,json=focusResponse,oneof"`
+	FocusResponse *FocusResponse `protobuf:"bytes,117,opt,name=focus_response,json=focusResponse,oneof" json:"focus_response,omitempty"`
 }
 type ServerOriginatedMessage_ListProfilesResponse struct {
-	ListProfilesResponse *ListProfilesResponse `protobuf:"bytes,118,opt,name=list_profiles_response,json=listProfilesResponse,oneof"`
+	ListProfilesResponse *ListProfilesResponse `protobuf:"bytes,118,opt,name=list_profiles_response,json=listProfilesResponse,oneof" json:"list_profiles_response,omitempty"`
 }
 type ServerOriginatedMessage_ServerOriginatedRpcResultResponse struct {
-	ServerOriginatedRpcResultResponse *ServerOriginatedRPCResultResponse `protobuf:"bytes,119,opt,name=server_originated_rpc_result_response,json=serverOriginatedRpcResultResponse,oneof"`
+	ServerOriginatedRpcResultResponse *ServerOriginatedRPCResultResponse `protobuf:"bytes,119,opt,name=server_originated_rpc_result_response,json=serverOriginatedRpcResultResponse,oneof" json:"server_originated_rpc_result_response,omitempty"`
 }
 type ServerOriginatedMessage_RestartSessionResponse struct {
-	RestartSessionResponse *RestartSessionResponse `protobuf:"bytes,120,opt,name=restart_session_response,json=restartSessionResponse,oneof"`
+	RestartSessionResponse *RestartSessionResponse `protobuf:"bytes,120,opt,name=restart_session_response,json=restartSessionResponse,oneof" json:"restart_session_response,omitempty"`
 }
 type ServerOriginatedMessage_MenuItemResponse struct {
-	MenuItemResponse *MenuItemResponse `protobuf:"bytes,121,opt,name=menu_item_response,json=menuItemResponse,oneof"`
+	MenuItemResponse *MenuItemResponse `protobuf:"bytes,121,opt,name=menu_item_response,json=menuItemResponse,oneof" json:"menu_item_response,omitempty"`
 }
 type ServerOriginatedMessage_SetTabLayoutResponse struct {
-	SetTabLayoutResponse *SetTabLayoutResponse `protobuf:"bytes,122,opt,name=set_tab_layout_response,json=setTabLayoutResponse,oneof"`
+	SetTabLayoutResponse *SetTabLayoutResponse `protobuf:"bytes,122,opt,name=set_tab_layout_response,json=setTabLayoutResponse,oneof" json:"set_tab_layout_response,omitempty"`
 }
 type ServerOriginatedMessage_GetBroadcastDomainsResponse struct {
-	GetBroadcastDomainsResponse *GetBroadcastDomainsResponse `protobuf:"bytes,123,opt,name=get_broadcast_domains_response,json=getBroadcastDomainsResponse,oneof"`
+	GetBroadcastDomainsResponse *GetBroadcastDomainsResponse `protobuf:"bytes,123,opt,name=get_broadcast_domains_response,json=getBroadcastDomainsResponse,oneof" json:"get_broadcast_domains_response,omitempty"`
 }
 type ServerOriginatedMessage_TmuxResponse struct {
-	TmuxResponse *TmuxResponse `protobuf:"bytes,124,opt,name=tmux_response,json=tmuxResponse,oneof"`
+	TmuxResponse *TmuxResponse `protobuf:"bytes,124,opt,name=tmux_response,json=tmuxResponse,oneof" json:"tmux_response,omitempty"`
 }
 type ServerOriginatedMessage_ReorderTabsResponse struct {
-	ReorderTabsResponse *ReorderTabsResponse `protobuf:"bytes,125,opt,name=reorder_tabs_response,json=reorderTabsResponse,oneof"`
+	ReorderTabsResponse *ReorderTabsResponse `protobuf:"bytes,125,opt,name=reorder_tabs_response,json=reorderTabsResponse,oneof" json:"reorder_tabs_response,omitempty"`
 }
 type ServerOriginatedMessage_PreferencesResponse struct {
-	PreferencesResponse *PreferencesResponse `protobuf:"bytes,126,opt,name=preferences_response,json=preferencesResponse,oneof"`
+	PreferencesResponse *PreferencesResponse `protobuf:"bytes,126,opt,name=preferences_response,json=preferencesResponse,oneof" json:"preferences_response,omitempty"`
 }
 type ServerOriginatedMessage_ColorPresetResponse struct {
-	ColorPresetResponse *ColorPresetResponse `protobuf:"bytes,127,opt,name=color_preset_response,json=colorPresetResponse,oneof"`
+	ColorPresetResponse *ColorPresetResponse `protobuf:"bytes,127,opt,name=color_preset_response,json=colorPresetResponse,oneof" json:"color_preset_response,omitempty"`
 }
 type ServerOriginatedMessage_SelectionResponse struct {
-	SelectionResponse *SelectionResponse `protobuf:"bytes,128,opt,name=selection_response,json=selectionResponse,oneof"`
+	SelectionResponse *SelectionResponse `protobuf:"bytes,128,opt,name=selection_response,json=selectionResponse,oneof" json:"selection_response,omitempty"`
 }
 type ServerOriginatedMessage_StatusBarComponentResponse struct {
-	StatusBarComponentResponse *StatusBarComponentResponse `protobuf:"bytes,129,opt,name=status_bar_component_response,json=statusBarComponentResponse,oneof"`
+	StatusBarComponentResponse *StatusBarComponentResponse `protobuf:"bytes,129,opt,name=status_bar_component_response,json=statusBarComponentResponse,oneof" json:"status_bar_component_response,omitempty"`
 }
 type ServerOriginatedMessage_SetBroadcastDomainsResponse struct {
-	SetBroadcastDomainsResponse *SetBroadcastDomainsResponse `protobuf:"bytes,130,opt,name=set_broadcast_domains_response,json=setBroadcastDomainsResponse,oneof"`
+	SetBroadcastDomainsResponse *SetBroadcastDomainsResponse `protobuf:"bytes,130,opt,name=set_broadcast_domains_response,json=setBroadcastDomainsResponse,oneof" json:"set_broadcast_domains_response,omitempty"`
 }
 type ServerOriginatedMessage_CloseResponse struct {
-	CloseResponse *CloseResponse `protobuf:"bytes,131,opt,name=close_response,json=closeResponse,oneof"`
+	CloseResponse *CloseResponse `protobuf:"bytes,131,opt,name=close_response,json=closeResponse,oneof" json:"close_response,omitempty"`
 }
 type ServerOriginatedMessage_InvokeFunctionResponse struct {
-	InvokeFunctionResponse *InvokeFunctionResponse `protobuf:"bytes,132,opt,name=invoke_function_response,json=invokeFunctionResponse,oneof"`
+	InvokeFunctionResponse *InvokeFunctionResponse `protobuf:"bytes,132,opt,name=invoke_function_response,json=invokeFunctionResponse,oneof" json:"invoke_function_response,omitempty"`
 }
 type ServerOriginatedMessage_Notification struct {
-	Notification *Notification `protobuf:"bytes,1000,opt,name=notification,oneof"`
+	Notification *Notification `protobuf:"bytes,1000,opt,name=notification,oneof" json:"notification,omitempty"`
 }
 
 func (*ServerOriginatedMessage_Error) isServerOriginatedMessage_Submessage()                      {}
@@ -3512,9 +2888,9 @@ func (m *ServerOriginatedMessage) GetNotification() *Notification {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*ServerOriginatedMessage) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _ServerOriginatedMessage_OneofMarshaler, _ServerOriginatedMessage_OneofUnmarshaler, _ServerOriginatedMessage_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*ServerOriginatedMessage) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*ServerOriginatedMessage_Error)(nil),
 		(*ServerOriginatedMessage_GetBufferResponse)(nil),
 		(*ServerOriginatedMessage_GetPromptResponse)(nil),
@@ -3551,662 +2927,6 @@ func (*ServerOriginatedMessage) XXX_OneofFuncs() (func(msg proto.Message, b *pro
 		(*ServerOriginatedMessage_InvokeFunctionResponse)(nil),
 		(*ServerOriginatedMessage_Notification)(nil),
 	}
-}
-
-func _ServerOriginatedMessage_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*ServerOriginatedMessage)
-	// submessage
-	switch x := m.Submessage.(type) {
-	case *ServerOriginatedMessage_Error:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.Error)
-	case *ServerOriginatedMessage_GetBufferResponse:
-		_ = b.EncodeVarint(100<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetBufferResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_GetPromptResponse:
-		_ = b.EncodeVarint(101<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPromptResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_TransactionResponse:
-		_ = b.EncodeVarint(102<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.TransactionResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_NotificationResponse:
-		_ = b.EncodeVarint(103<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.NotificationResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_RegisterToolResponse:
-		_ = b.EncodeVarint(104<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.RegisterToolResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SetProfilePropertyResponse:
-		_ = b.EncodeVarint(105<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetProfilePropertyResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_ListSessionsResponse:
-		_ = b.EncodeVarint(106<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListSessionsResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SendTextResponse:
-		_ = b.EncodeVarint(107<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SendTextResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_CreateTabResponse:
-		_ = b.EncodeVarint(108<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CreateTabResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SplitPaneResponse:
-		_ = b.EncodeVarint(109<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SplitPaneResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_GetProfilePropertyResponse:
-		_ = b.EncodeVarint(110<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetProfilePropertyResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SetPropertyResponse:
-		_ = b.EncodeVarint(111<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetPropertyResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_GetPropertyResponse:
-		_ = b.EncodeVarint(112<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPropertyResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_InjectResponse:
-		_ = b.EncodeVarint(113<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.InjectResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_ActivateResponse:
-		_ = b.EncodeVarint(114<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ActivateResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_VariableResponse:
-		_ = b.EncodeVarint(115<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.VariableResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SavedArrangementResponse:
-		_ = b.EncodeVarint(116<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SavedArrangementResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_FocusResponse:
-		_ = b.EncodeVarint(117<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.FocusResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_ListProfilesResponse:
-		_ = b.EncodeVarint(118<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListProfilesResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_ServerOriginatedRpcResultResponse:
-		_ = b.EncodeVarint(119<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ServerOriginatedRpcResultResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_RestartSessionResponse:
-		_ = b.EncodeVarint(120<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.RestartSessionResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_MenuItemResponse:
-		_ = b.EncodeVarint(121<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.MenuItemResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SetTabLayoutResponse:
-		_ = b.EncodeVarint(122<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetTabLayoutResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_GetBroadcastDomainsResponse:
-		_ = b.EncodeVarint(123<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetBroadcastDomainsResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_TmuxResponse:
-		_ = b.EncodeVarint(124<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.TmuxResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_ReorderTabsResponse:
-		_ = b.EncodeVarint(125<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ReorderTabsResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_PreferencesResponse:
-		_ = b.EncodeVarint(126<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.PreferencesResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_ColorPresetResponse:
-		_ = b.EncodeVarint(127<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ColorPresetResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SelectionResponse:
-		_ = b.EncodeVarint(128<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SelectionResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_StatusBarComponentResponse:
-		_ = b.EncodeVarint(129<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.StatusBarComponentResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_SetBroadcastDomainsResponse:
-		_ = b.EncodeVarint(130<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetBroadcastDomainsResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_CloseResponse:
-		_ = b.EncodeVarint(131<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CloseResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_InvokeFunctionResponse:
-		_ = b.EncodeVarint(132<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.InvokeFunctionResponse); err != nil {
-			return err
-		}
-	case *ServerOriginatedMessage_Notification:
-		_ = b.EncodeVarint(1000<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Notification); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("ServerOriginatedMessage.Submessage has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _ServerOriginatedMessage_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*ServerOriginatedMessage)
-	switch tag {
-	case 2: // submessage.error
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Submessage = &ServerOriginatedMessage_Error{x}
-		return true, err
-	case 100: // submessage.get_buffer_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetBufferResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_GetBufferResponse{msg}
-		return true, err
-	case 101: // submessage.get_prompt_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetPromptResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_GetPromptResponse{msg}
-		return true, err
-	case 102: // submessage.transaction_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TransactionResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_TransactionResponse{msg}
-		return true, err
-	case 103: // submessage.notification_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(NotificationResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_NotificationResponse{msg}
-		return true, err
-	case 104: // submessage.register_tool_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RegisterToolResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_RegisterToolResponse{msg}
-		return true, err
-	case 105: // submessage.set_profile_property_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetProfilePropertyResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SetProfilePropertyResponse{msg}
-		return true, err
-	case 106: // submessage.list_sessions_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ListSessionsResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_ListSessionsResponse{msg}
-		return true, err
-	case 107: // submessage.send_text_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SendTextResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SendTextResponse{msg}
-		return true, err
-	case 108: // submessage.create_tab_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CreateTabResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_CreateTabResponse{msg}
-		return true, err
-	case 109: // submessage.split_pane_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SplitPaneResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SplitPaneResponse{msg}
-		return true, err
-	case 110: // submessage.get_profile_property_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetProfilePropertyResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_GetProfilePropertyResponse{msg}
-		return true, err
-	case 111: // submessage.set_property_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetPropertyResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SetPropertyResponse{msg}
-		return true, err
-	case 112: // submessage.get_property_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetPropertyResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_GetPropertyResponse{msg}
-		return true, err
-	case 113: // submessage.inject_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InjectResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_InjectResponse{msg}
-		return true, err
-	case 114: // submessage.activate_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ActivateResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_ActivateResponse{msg}
-		return true, err
-	case 115: // submessage.variable_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(VariableResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_VariableResponse{msg}
-		return true, err
-	case 116: // submessage.saved_arrangement_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SavedArrangementResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SavedArrangementResponse{msg}
-		return true, err
-	case 117: // submessage.focus_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(FocusResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_FocusResponse{msg}
-		return true, err
-	case 118: // submessage.list_profiles_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ListProfilesResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_ListProfilesResponse{msg}
-		return true, err
-	case 119: // submessage.server_originated_rpc_result_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ServerOriginatedRPCResultResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_ServerOriginatedRpcResultResponse{msg}
-		return true, err
-	case 120: // submessage.restart_session_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RestartSessionResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_RestartSessionResponse{msg}
-		return true, err
-	case 121: // submessage.menu_item_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(MenuItemResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_MenuItemResponse{msg}
-		return true, err
-	case 122: // submessage.set_tab_layout_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetTabLayoutResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SetTabLayoutResponse{msg}
-		return true, err
-	case 123: // submessage.get_broadcast_domains_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(GetBroadcastDomainsResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_GetBroadcastDomainsResponse{msg}
-		return true, err
-	case 124: // submessage.tmux_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_TmuxResponse{msg}
-		return true, err
-	case 125: // submessage.reorder_tabs_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ReorderTabsResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_ReorderTabsResponse{msg}
-		return true, err
-	case 126: // submessage.preferences_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_PreferencesResponse{msg}
-		return true, err
-	case 127: // submessage.color_preset_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ColorPresetResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_ColorPresetResponse{msg}
-		return true, err
-	case 128: // submessage.selection_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SelectionResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SelectionResponse{msg}
-		return true, err
-	case 129: // submessage.status_bar_component_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(StatusBarComponentResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_StatusBarComponentResponse{msg}
-		return true, err
-	case 130: // submessage.set_broadcast_domains_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetBroadcastDomainsResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_SetBroadcastDomainsResponse{msg}
-		return true, err
-	case 131: // submessage.close_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CloseResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_CloseResponse{msg}
-		return true, err
-	case 132: // submessage.invoke_function_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionResponse)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_InvokeFunctionResponse{msg}
-		return true, err
-	case 1000: // submessage.notification
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(Notification)
-		err := b.DecodeMessage(msg)
-		m.Submessage = &ServerOriginatedMessage_Notification{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _ServerOriginatedMessage_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*ServerOriginatedMessage)
-	// submessage
-	switch x := m.Submessage.(type) {
-	case *ServerOriginatedMessage_Error:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.Error)))
-		n += len(x.Error)
-	case *ServerOriginatedMessage_GetBufferResponse:
-		s := proto.Size(x.GetBufferResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_GetPromptResponse:
-		s := proto.Size(x.GetPromptResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_TransactionResponse:
-		s := proto.Size(x.TransactionResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_NotificationResponse:
-		s := proto.Size(x.NotificationResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_RegisterToolResponse:
-		s := proto.Size(x.RegisterToolResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SetProfilePropertyResponse:
-		s := proto.Size(x.SetProfilePropertyResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_ListSessionsResponse:
-		s := proto.Size(x.ListSessionsResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SendTextResponse:
-		s := proto.Size(x.SendTextResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_CreateTabResponse:
-		s := proto.Size(x.CreateTabResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SplitPaneResponse:
-		s := proto.Size(x.SplitPaneResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_GetProfilePropertyResponse:
-		s := proto.Size(x.GetProfilePropertyResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SetPropertyResponse:
-		s := proto.Size(x.SetPropertyResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_GetPropertyResponse:
-		s := proto.Size(x.GetPropertyResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_InjectResponse:
-		s := proto.Size(x.InjectResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_ActivateResponse:
-		s := proto.Size(x.ActivateResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_VariableResponse:
-		s := proto.Size(x.VariableResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SavedArrangementResponse:
-		s := proto.Size(x.SavedArrangementResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_FocusResponse:
-		s := proto.Size(x.FocusResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_ListProfilesResponse:
-		s := proto.Size(x.ListProfilesResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_ServerOriginatedRpcResultResponse:
-		s := proto.Size(x.ServerOriginatedRpcResultResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_RestartSessionResponse:
-		s := proto.Size(x.RestartSessionResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_MenuItemResponse:
-		s := proto.Size(x.MenuItemResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SetTabLayoutResponse:
-		s := proto.Size(x.SetTabLayoutResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_GetBroadcastDomainsResponse:
-		s := proto.Size(x.GetBroadcastDomainsResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_TmuxResponse:
-		s := proto.Size(x.TmuxResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_ReorderTabsResponse:
-		s := proto.Size(x.ReorderTabsResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_PreferencesResponse:
-		s := proto.Size(x.PreferencesResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_ColorPresetResponse:
-		s := proto.Size(x.ColorPresetResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SelectionResponse:
-		s := proto.Size(x.SelectionResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_StatusBarComponentResponse:
-		s := proto.Size(x.StatusBarComponentResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_SetBroadcastDomainsResponse:
-		s := proto.Size(x.SetBroadcastDomainsResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_CloseResponse:
-		s := proto.Size(x.CloseResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_InvokeFunctionResponse:
-		s := proto.Size(x.InvokeFunctionResponse)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ServerOriginatedMessage_Notification:
-		s := proto.Size(x.Notification)
-		n += 2 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type InvokeFunctionRequest struct {
@@ -4255,19 +2975,19 @@ type isInvokeFunctionRequest_Context interface {
 }
 
 type InvokeFunctionRequest_Tab_ struct {
-	Tab *InvokeFunctionRequest_Tab `protobuf:"bytes,1,opt,name=tab,oneof"`
+	Tab *InvokeFunctionRequest_Tab `protobuf:"bytes,1,opt,name=tab,oneof" json:"tab,omitempty"`
 }
 type InvokeFunctionRequest_Session_ struct {
-	Session *InvokeFunctionRequest_Session `protobuf:"bytes,2,opt,name=session,oneof"`
+	Session *InvokeFunctionRequest_Session `protobuf:"bytes,2,opt,name=session,oneof" json:"session,omitempty"`
 }
 type InvokeFunctionRequest_Window_ struct {
-	Window *InvokeFunctionRequest_Window `protobuf:"bytes,3,opt,name=window,oneof"`
+	Window *InvokeFunctionRequest_Window `protobuf:"bytes,3,opt,name=window,oneof" json:"window,omitempty"`
 }
 type InvokeFunctionRequest_App_ struct {
-	App *InvokeFunctionRequest_App `protobuf:"bytes,4,opt,name=app,oneof"`
+	App *InvokeFunctionRequest_App `protobuf:"bytes,4,opt,name=app,oneof" json:"app,omitempty"`
 }
 type InvokeFunctionRequest_Method_ struct {
-	Method *InvokeFunctionRequest_Method `protobuf:"bytes,7,opt,name=method,oneof"`
+	Method *InvokeFunctionRequest_Method `protobuf:"bytes,7,opt,name=method,oneof" json:"method,omitempty"`
 }
 
 func (*InvokeFunctionRequest_Tab_) isInvokeFunctionRequest_Context()     {}
@@ -4332,135 +3052,15 @@ func (m *InvokeFunctionRequest) GetTimeout() float64 {
 	return Default_InvokeFunctionRequest_Timeout
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*InvokeFunctionRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _InvokeFunctionRequest_OneofMarshaler, _InvokeFunctionRequest_OneofUnmarshaler, _InvokeFunctionRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*InvokeFunctionRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*InvokeFunctionRequest_Tab_)(nil),
 		(*InvokeFunctionRequest_Session_)(nil),
 		(*InvokeFunctionRequest_Window_)(nil),
 		(*InvokeFunctionRequest_App_)(nil),
 		(*InvokeFunctionRequest_Method_)(nil),
 	}
-}
-
-func _InvokeFunctionRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*InvokeFunctionRequest)
-	// context
-	switch x := m.Context.(type) {
-	case *InvokeFunctionRequest_Tab_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Tab); err != nil {
-			return err
-		}
-	case *InvokeFunctionRequest_Session_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Session); err != nil {
-			return err
-		}
-	case *InvokeFunctionRequest_Window_:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Window); err != nil {
-			return err
-		}
-	case *InvokeFunctionRequest_App_:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.App); err != nil {
-			return err
-		}
-	case *InvokeFunctionRequest_Method_:
-		_ = b.EncodeVarint(7<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Method); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("InvokeFunctionRequest.Context has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _InvokeFunctionRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*InvokeFunctionRequest)
-	switch tag {
-	case 1: // context.tab
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionRequest_Tab)
-		err := b.DecodeMessage(msg)
-		m.Context = &InvokeFunctionRequest_Tab_{msg}
-		return true, err
-	case 2: // context.session
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionRequest_Session)
-		err := b.DecodeMessage(msg)
-		m.Context = &InvokeFunctionRequest_Session_{msg}
-		return true, err
-	case 3: // context.window
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionRequest_Window)
-		err := b.DecodeMessage(msg)
-		m.Context = &InvokeFunctionRequest_Window_{msg}
-		return true, err
-	case 4: // context.app
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionRequest_App)
-		err := b.DecodeMessage(msg)
-		m.Context = &InvokeFunctionRequest_App_{msg}
-		return true, err
-	case 7: // context.method
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionRequest_Method)
-		err := b.DecodeMessage(msg)
-		m.Context = &InvokeFunctionRequest_Method_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _InvokeFunctionRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*InvokeFunctionRequest)
-	// context
-	switch x := m.Context.(type) {
-	case *InvokeFunctionRequest_Tab_:
-		s := proto.Size(x.Tab)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *InvokeFunctionRequest_Session_:
-		s := proto.Size(x.Session)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *InvokeFunctionRequest_Window_:
-		s := proto.Size(x.Window)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *InvokeFunctionRequest_App_:
-		s := proto.Size(x.App)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *InvokeFunctionRequest_Method_:
-		s := proto.Size(x.Method)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type InvokeFunctionRequest_Tab struct {
@@ -4684,10 +3284,10 @@ type isInvokeFunctionResponse_Disposition interface {
 }
 
 type InvokeFunctionResponse_Error_ struct {
-	Error *InvokeFunctionResponse_Error `protobuf:"bytes,1,opt,name=error,oneof"`
+	Error *InvokeFunctionResponse_Error `protobuf:"bytes,1,opt,name=error,oneof" json:"error,omitempty"`
 }
 type InvokeFunctionResponse_Success_ struct {
-	Success *InvokeFunctionResponse_Success `protobuf:"bytes,2,opt,name=success,oneof"`
+	Success *InvokeFunctionResponse_Success `protobuf:"bytes,2,opt,name=success,oneof" json:"success,omitempty"`
 }
 
 func (*InvokeFunctionResponse_Error_) isInvokeFunctionResponse_Disposition()   {}
@@ -4714,78 +3314,12 @@ func (m *InvokeFunctionResponse) GetSuccess() *InvokeFunctionResponse_Success {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*InvokeFunctionResponse) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _InvokeFunctionResponse_OneofMarshaler, _InvokeFunctionResponse_OneofUnmarshaler, _InvokeFunctionResponse_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*InvokeFunctionResponse) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*InvokeFunctionResponse_Error_)(nil),
 		(*InvokeFunctionResponse_Success_)(nil),
 	}
-}
-
-func _InvokeFunctionResponse_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*InvokeFunctionResponse)
-	// disposition
-	switch x := m.Disposition.(type) {
-	case *InvokeFunctionResponse_Error_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Error); err != nil {
-			return err
-		}
-	case *InvokeFunctionResponse_Success_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Success); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("InvokeFunctionResponse.Disposition has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _InvokeFunctionResponse_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*InvokeFunctionResponse)
-	switch tag {
-	case 1: // disposition.error
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionResponse_Error)
-		err := b.DecodeMessage(msg)
-		m.Disposition = &InvokeFunctionResponse_Error_{msg}
-		return true, err
-	case 2: // disposition.success
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(InvokeFunctionResponse_Success)
-		err := b.DecodeMessage(msg)
-		m.Disposition = &InvokeFunctionResponse_Success_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _InvokeFunctionResponse_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*InvokeFunctionResponse)
-	// disposition
-	switch x := m.Disposition.(type) {
-	case *InvokeFunctionResponse_Error_:
-		s := proto.Size(x.Error)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *InvokeFunctionResponse_Success_:
-		s := proto.Size(x.Success)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type InvokeFunctionResponse_Error struct {
@@ -4913,13 +3447,13 @@ type isCloseRequest_Target interface {
 }
 
 type CloseRequest_Tabs struct {
-	Tabs *CloseRequest_CloseTabs `protobuf:"bytes,1,opt,name=tabs,oneof"`
+	Tabs *CloseRequest_CloseTabs `protobuf:"bytes,1,opt,name=tabs,oneof" json:"tabs,omitempty"`
 }
 type CloseRequest_Sessions struct {
-	Sessions *CloseRequest_CloseSessions `protobuf:"bytes,2,opt,name=sessions,oneof"`
+	Sessions *CloseRequest_CloseSessions `protobuf:"bytes,2,opt,name=sessions,oneof" json:"sessions,omitempty"`
 }
 type CloseRequest_Windows struct {
-	Windows *CloseRequest_CloseWindows `protobuf:"bytes,3,opt,name=windows,oneof"`
+	Windows *CloseRequest_CloseWindows `protobuf:"bytes,3,opt,name=windows,oneof" json:"windows,omitempty"`
 }
 
 func (*CloseRequest_Tabs) isCloseRequest_Target()     {}
@@ -4961,97 +3495,13 @@ func (m *CloseRequest) GetForce() bool {
 	return false
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*CloseRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _CloseRequest_OneofMarshaler, _CloseRequest_OneofUnmarshaler, _CloseRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*CloseRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*CloseRequest_Tabs)(nil),
 		(*CloseRequest_Sessions)(nil),
 		(*CloseRequest_Windows)(nil),
 	}
-}
-
-func _CloseRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*CloseRequest)
-	// target
-	switch x := m.Target.(type) {
-	case *CloseRequest_Tabs:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Tabs); err != nil {
-			return err
-		}
-	case *CloseRequest_Sessions:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Sessions); err != nil {
-			return err
-		}
-	case *CloseRequest_Windows:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Windows); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("CloseRequest.Target has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _CloseRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*CloseRequest)
-	switch tag {
-	case 1: // target.tabs
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CloseRequest_CloseTabs)
-		err := b.DecodeMessage(msg)
-		m.Target = &CloseRequest_Tabs{msg}
-		return true, err
-	case 2: // target.sessions
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CloseRequest_CloseSessions)
-		err := b.DecodeMessage(msg)
-		m.Target = &CloseRequest_Sessions{msg}
-		return true, err
-	case 3: // target.windows
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(CloseRequest_CloseWindows)
-		err := b.DecodeMessage(msg)
-		m.Target = &CloseRequest_Windows{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _CloseRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*CloseRequest)
-	// target
-	switch x := m.Target.(type) {
-	case *CloseRequest_Tabs:
-		s := proto.Size(x.Tabs)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *CloseRequest_Sessions:
-		s := proto.Size(x.Sessions)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *CloseRequest_Windows:
-		s := proto.Size(x.Windows)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type CloseRequest_CloseTabs struct {
@@ -5321,7 +3771,7 @@ type isStatusBarComponentRequest_Request interface {
 }
 
 type StatusBarComponentRequest_OpenPopover_ struct {
-	OpenPopover *StatusBarComponentRequest_OpenPopover `protobuf:"bytes,1,opt,name=open_popover,json=openPopover,oneof"`
+	OpenPopover *StatusBarComponentRequest_OpenPopover `protobuf:"bytes,1,opt,name=open_popover,json=openPopover,oneof" json:"open_popover,omitempty"`
 }
 
 func (*StatusBarComponentRequest_OpenPopover_) isStatusBarComponentRequest_Request() {}
@@ -5347,59 +3797,11 @@ func (m *StatusBarComponentRequest) GetIdentifier() string {
 	return ""
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*StatusBarComponentRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _StatusBarComponentRequest_OneofMarshaler, _StatusBarComponentRequest_OneofUnmarshaler, _StatusBarComponentRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*StatusBarComponentRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*StatusBarComponentRequest_OpenPopover_)(nil),
 	}
-}
-
-func _StatusBarComponentRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*StatusBarComponentRequest)
-	// request
-	switch x := m.Request.(type) {
-	case *StatusBarComponentRequest_OpenPopover_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.OpenPopover); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("StatusBarComponentRequest.Request has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _StatusBarComponentRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*StatusBarComponentRequest)
-	switch tag {
-	case 1: // request.open_popover
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(StatusBarComponentRequest_OpenPopover)
-		err := b.DecodeMessage(msg)
-		m.Request = &StatusBarComponentRequest_OpenPopover_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _StatusBarComponentRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*StatusBarComponentRequest)
-	// request
-	switch x := m.Request.(type) {
-	case *StatusBarComponentRequest_OpenPopover_:
-		s := proto.Size(x.OpenPopover)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type StatusBarComponentRequest_OpenPopover struct {
@@ -5671,10 +4073,10 @@ type isSelectionRequest_Request interface {
 }
 
 type SelectionRequest_GetSelectionRequest_ struct {
-	GetSelectionRequest *SelectionRequest_GetSelectionRequest `protobuf:"bytes,1,opt,name=get_selection_request,json=getSelectionRequest,oneof"`
+	GetSelectionRequest *SelectionRequest_GetSelectionRequest `protobuf:"bytes,1,opt,name=get_selection_request,json=getSelectionRequest,oneof" json:"get_selection_request,omitempty"`
 }
 type SelectionRequest_SetSelectionRequest_ struct {
-	SetSelectionRequest *SelectionRequest_SetSelectionRequest `protobuf:"bytes,2,opt,name=set_selection_request,json=setSelectionRequest,oneof"`
+	SetSelectionRequest *SelectionRequest_SetSelectionRequest `protobuf:"bytes,2,opt,name=set_selection_request,json=setSelectionRequest,oneof" json:"set_selection_request,omitempty"`
 }
 
 func (*SelectionRequest_GetSelectionRequest_) isSelectionRequest_Request() {}
@@ -5701,78 +4103,12 @@ func (m *SelectionRequest) GetSetSelectionRequest() *SelectionRequest_SetSelecti
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*SelectionRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _SelectionRequest_OneofMarshaler, _SelectionRequest_OneofUnmarshaler, _SelectionRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*SelectionRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*SelectionRequest_GetSelectionRequest_)(nil),
 		(*SelectionRequest_SetSelectionRequest_)(nil),
 	}
-}
-
-func _SelectionRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*SelectionRequest)
-	// request
-	switch x := m.Request.(type) {
-	case *SelectionRequest_GetSelectionRequest_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetSelectionRequest); err != nil {
-			return err
-		}
-	case *SelectionRequest_SetSelectionRequest_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetSelectionRequest); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("SelectionRequest.Request has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _SelectionRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*SelectionRequest)
-	switch tag {
-	case 1: // request.get_selection_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SelectionRequest_GetSelectionRequest)
-		err := b.DecodeMessage(msg)
-		m.Request = &SelectionRequest_GetSelectionRequest_{msg}
-		return true, err
-	case 2: // request.set_selection_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SelectionRequest_SetSelectionRequest)
-		err := b.DecodeMessage(msg)
-		m.Request = &SelectionRequest_SetSelectionRequest_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _SelectionRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*SelectionRequest)
-	// request
-	switch x := m.Request.(type) {
-	case *SelectionRequest_GetSelectionRequest_:
-		s := proto.Size(x.GetSelectionRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *SelectionRequest_SetSelectionRequest_:
-		s := proto.Size(x.SetSelectionRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type SelectionRequest_GetSelectionRequest struct {
@@ -5899,10 +4235,10 @@ type isSelectionResponse_Response interface {
 }
 
 type SelectionResponse_GetSelectionResponse_ struct {
-	GetSelectionResponse *SelectionResponse_GetSelectionResponse `protobuf:"bytes,2,opt,name=get_selection_response,json=getSelectionResponse,oneof"`
+	GetSelectionResponse *SelectionResponse_GetSelectionResponse `protobuf:"bytes,2,opt,name=get_selection_response,json=getSelectionResponse,oneof" json:"get_selection_response,omitempty"`
 }
 type SelectionResponse_SetSelectionResponse_ struct {
-	SetSelectionResponse *SelectionResponse_SetSelectionResponse `protobuf:"bytes,3,opt,name=set_selection_response,json=setSelectionResponse,oneof"`
+	SetSelectionResponse *SelectionResponse_SetSelectionResponse `protobuf:"bytes,3,opt,name=set_selection_response,json=setSelectionResponse,oneof" json:"set_selection_response,omitempty"`
 }
 
 func (*SelectionResponse_GetSelectionResponse_) isSelectionResponse_Response() {}
@@ -5936,78 +4272,12 @@ func (m *SelectionResponse) GetSetSelectionResponse() *SelectionResponse_SetSele
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*SelectionResponse) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _SelectionResponse_OneofMarshaler, _SelectionResponse_OneofUnmarshaler, _SelectionResponse_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*SelectionResponse) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*SelectionResponse_GetSelectionResponse_)(nil),
 		(*SelectionResponse_SetSelectionResponse_)(nil),
 	}
-}
-
-func _SelectionResponse_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*SelectionResponse)
-	// response
-	switch x := m.Response.(type) {
-	case *SelectionResponse_GetSelectionResponse_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetSelectionResponse); err != nil {
-			return err
-		}
-	case *SelectionResponse_SetSelectionResponse_:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetSelectionResponse); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("SelectionResponse.Response has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _SelectionResponse_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*SelectionResponse)
-	switch tag {
-	case 2: // response.get_selection_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SelectionResponse_GetSelectionResponse)
-		err := b.DecodeMessage(msg)
-		m.Response = &SelectionResponse_GetSelectionResponse_{msg}
-		return true, err
-	case 3: // response.set_selection_response
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SelectionResponse_SetSelectionResponse)
-		err := b.DecodeMessage(msg)
-		m.Response = &SelectionResponse_SetSelectionResponse_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _SelectionResponse_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*SelectionResponse)
-	// response
-	switch x := m.Response.(type) {
-	case *SelectionResponse_GetSelectionResponse_:
-		s := proto.Size(x.GetSelectionResponse)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *SelectionResponse_SetSelectionResponse_:
-		s := proto.Size(x.SetSelectionResponse)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type SelectionResponse_GetSelectionResponse struct {
@@ -6121,10 +4391,10 @@ type isColorPresetRequest_Request interface {
 }
 
 type ColorPresetRequest_ListPresets_ struct {
-	ListPresets *ColorPresetRequest_ListPresets `protobuf:"bytes,1,opt,name=list_presets,json=listPresets,oneof"`
+	ListPresets *ColorPresetRequest_ListPresets `protobuf:"bytes,1,opt,name=list_presets,json=listPresets,oneof" json:"list_presets,omitempty"`
 }
 type ColorPresetRequest_GetPreset_ struct {
-	GetPreset *ColorPresetRequest_GetPreset `protobuf:"bytes,2,opt,name=get_preset,json=getPreset,oneof"`
+	GetPreset *ColorPresetRequest_GetPreset `protobuf:"bytes,2,opt,name=get_preset,json=getPreset,oneof" json:"get_preset,omitempty"`
 }
 
 func (*ColorPresetRequest_ListPresets_) isColorPresetRequest_Request() {}
@@ -6151,78 +4421,12 @@ func (m *ColorPresetRequest) GetGetPreset() *ColorPresetRequest_GetPreset {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*ColorPresetRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _ColorPresetRequest_OneofMarshaler, _ColorPresetRequest_OneofUnmarshaler, _ColorPresetRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*ColorPresetRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*ColorPresetRequest_ListPresets_)(nil),
 		(*ColorPresetRequest_GetPreset_)(nil),
 	}
-}
-
-func _ColorPresetRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*ColorPresetRequest)
-	// request
-	switch x := m.Request.(type) {
-	case *ColorPresetRequest_ListPresets_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListPresets); err != nil {
-			return err
-		}
-	case *ColorPresetRequest_GetPreset_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPreset); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("ColorPresetRequest.Request has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _ColorPresetRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*ColorPresetRequest)
-	switch tag {
-	case 1: // request.list_presets
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ColorPresetRequest_ListPresets)
-		err := b.DecodeMessage(msg)
-		m.Request = &ColorPresetRequest_ListPresets_{msg}
-		return true, err
-	case 2: // request.get_preset
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ColorPresetRequest_GetPreset)
-		err := b.DecodeMessage(msg)
-		m.Request = &ColorPresetRequest_GetPreset_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _ColorPresetRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*ColorPresetRequest)
-	// request
-	switch x := m.Request.(type) {
-	case *ColorPresetRequest_ListPresets_:
-		s := proto.Size(x.ListPresets)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ColorPresetRequest_GetPreset_:
-		s := proto.Size(x.GetPreset)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type ColorPresetRequest_ListPresets struct {
@@ -6333,10 +4537,10 @@ type isColorPresetResponse_Response interface {
 }
 
 type ColorPresetResponse_ListPresets_ struct {
-	ListPresets *ColorPresetResponse_ListPresets `protobuf:"bytes,1,opt,name=list_presets,json=listPresets,oneof"`
+	ListPresets *ColorPresetResponse_ListPresets `protobuf:"bytes,1,opt,name=list_presets,json=listPresets,oneof" json:"list_presets,omitempty"`
 }
 type ColorPresetResponse_GetPreset_ struct {
-	GetPreset *ColorPresetResponse_GetPreset `protobuf:"bytes,2,opt,name=get_preset,json=getPreset,oneof"`
+	GetPreset *ColorPresetResponse_GetPreset `protobuf:"bytes,2,opt,name=get_preset,json=getPreset,oneof" json:"get_preset,omitempty"`
 }
 
 func (*ColorPresetResponse_ListPresets_) isColorPresetResponse_Response() {}
@@ -6370,78 +4574,12 @@ func (m *ColorPresetResponse) GetStatus() ColorPresetResponse_Status {
 	return ColorPresetResponse_OK
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*ColorPresetResponse) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _ColorPresetResponse_OneofMarshaler, _ColorPresetResponse_OneofUnmarshaler, _ColorPresetResponse_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*ColorPresetResponse) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*ColorPresetResponse_ListPresets_)(nil),
 		(*ColorPresetResponse_GetPreset_)(nil),
 	}
-}
-
-func _ColorPresetResponse_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*ColorPresetResponse)
-	// response
-	switch x := m.Response.(type) {
-	case *ColorPresetResponse_ListPresets_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListPresets); err != nil {
-			return err
-		}
-	case *ColorPresetResponse_GetPreset_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPreset); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("ColorPresetResponse.Response has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _ColorPresetResponse_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*ColorPresetResponse)
-	switch tag {
-	case 1: // response.list_presets
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ColorPresetResponse_ListPresets)
-		err := b.DecodeMessage(msg)
-		m.Response = &ColorPresetResponse_ListPresets_{msg}
-		return true, err
-	case 2: // response.get_preset
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ColorPresetResponse_GetPreset)
-		err := b.DecodeMessage(msg)
-		m.Response = &ColorPresetResponse_GetPreset_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _ColorPresetResponse_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*ColorPresetResponse)
-	// response
-	switch x := m.Response.(type) {
-	case *ColorPresetResponse_ListPresets_:
-		s := proto.Size(x.ListPresets)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *ColorPresetResponse_GetPreset_:
-		s := proto.Size(x.GetPreset)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type ColorPresetResponse_ListPresets struct {
@@ -6680,13 +4818,13 @@ type isPreferencesRequest_Request_Request interface {
 }
 
 type PreferencesRequest_Request_SetPreferenceRequest struct {
-	SetPreferenceRequest *PreferencesRequest_Request_SetPreference `protobuf:"bytes,1,opt,name=set_preference_request,json=setPreferenceRequest,oneof"`
+	SetPreferenceRequest *PreferencesRequest_Request_SetPreference `protobuf:"bytes,1,opt,name=set_preference_request,json=setPreferenceRequest,oneof" json:"set_preference_request,omitempty"`
 }
 type PreferencesRequest_Request_GetPreferenceRequest struct {
-	GetPreferenceRequest *PreferencesRequest_Request_GetPreference `protobuf:"bytes,2,opt,name=get_preference_request,json=getPreferenceRequest,oneof"`
+	GetPreferenceRequest *PreferencesRequest_Request_GetPreference `protobuf:"bytes,2,opt,name=get_preference_request,json=getPreferenceRequest,oneof" json:"get_preference_request,omitempty"`
 }
 type PreferencesRequest_Request_SetDefaultProfileRequest struct {
-	SetDefaultProfileRequest *PreferencesRequest_Request_SetDefaultProfile `protobuf:"bytes,3,opt,name=set_default_profile_request,json=setDefaultProfileRequest,oneof"`
+	SetDefaultProfileRequest *PreferencesRequest_Request_SetDefaultProfile `protobuf:"bytes,3,opt,name=set_default_profile_request,json=setDefaultProfileRequest,oneof" json:"set_default_profile_request,omitempty"`
 }
 
 func (*PreferencesRequest_Request_SetPreferenceRequest) isPreferencesRequest_Request_Request()     {}
@@ -6721,97 +4859,13 @@ func (m *PreferencesRequest_Request) GetSetDefaultProfileRequest() *PreferencesR
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*PreferencesRequest_Request) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _PreferencesRequest_Request_OneofMarshaler, _PreferencesRequest_Request_OneofUnmarshaler, _PreferencesRequest_Request_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*PreferencesRequest_Request) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*PreferencesRequest_Request_SetPreferenceRequest)(nil),
 		(*PreferencesRequest_Request_GetPreferenceRequest)(nil),
 		(*PreferencesRequest_Request_SetDefaultProfileRequest)(nil),
 	}
-}
-
-func _PreferencesRequest_Request_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*PreferencesRequest_Request)
-	// request
-	switch x := m.Request.(type) {
-	case *PreferencesRequest_Request_SetPreferenceRequest:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetPreferenceRequest); err != nil {
-			return err
-		}
-	case *PreferencesRequest_Request_GetPreferenceRequest:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPreferenceRequest); err != nil {
-			return err
-		}
-	case *PreferencesRequest_Request_SetDefaultProfileRequest:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetDefaultProfileRequest); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("PreferencesRequest_Request.Request has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _PreferencesRequest_Request_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*PreferencesRequest_Request)
-	switch tag {
-	case 1: // request.set_preference_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesRequest_Request_SetPreference)
-		err := b.DecodeMessage(msg)
-		m.Request = &PreferencesRequest_Request_SetPreferenceRequest{msg}
-		return true, err
-	case 2: // request.get_preference_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesRequest_Request_GetPreference)
-		err := b.DecodeMessage(msg)
-		m.Request = &PreferencesRequest_Request_GetPreferenceRequest{msg}
-		return true, err
-	case 3: // request.set_default_profile_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesRequest_Request_SetDefaultProfile)
-		err := b.DecodeMessage(msg)
-		m.Request = &PreferencesRequest_Request_SetDefaultProfileRequest{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _PreferencesRequest_Request_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*PreferencesRequest_Request)
-	// request
-	switch x := m.Request.(type) {
-	case *PreferencesRequest_Request_SetPreferenceRequest:
-		s := proto.Size(x.SetPreferenceRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PreferencesRequest_Request_GetPreferenceRequest:
-		s := proto.Size(x.GetPreferenceRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PreferencesRequest_Request_SetDefaultProfileRequest:
-		s := proto.Size(x.SetDefaultProfileRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type PreferencesRequest_Request_SetPreference struct {
@@ -7023,16 +5077,16 @@ type isPreferencesResponse_Result_Result interface {
 }
 
 type PreferencesResponse_Result_UnrecognizedRequest struct {
-	UnrecognizedRequest *PreferencesResponse_Result_UnrecognizedResult `protobuf:"bytes,1,opt,name=unrecognized_request,json=unrecognizedRequest,oneof"`
+	UnrecognizedRequest *PreferencesResponse_Result_UnrecognizedResult `protobuf:"bytes,1,opt,name=unrecognized_request,json=unrecognizedRequest,oneof" json:"unrecognized_request,omitempty"`
 }
 type PreferencesResponse_Result_SetPreferenceResult_ struct {
-	SetPreferenceResult *PreferencesResponse_Result_SetPreferenceResult `protobuf:"bytes,2,opt,name=set_preference_result,json=setPreferenceResult,oneof"`
+	SetPreferenceResult *PreferencesResponse_Result_SetPreferenceResult `protobuf:"bytes,2,opt,name=set_preference_result,json=setPreferenceResult,oneof" json:"set_preference_result,omitempty"`
 }
 type PreferencesResponse_Result_GetPreferenceResult_ struct {
-	GetPreferenceResult *PreferencesResponse_Result_GetPreferenceResult `protobuf:"bytes,3,opt,name=get_preference_result,json=getPreferenceResult,oneof"`
+	GetPreferenceResult *PreferencesResponse_Result_GetPreferenceResult `protobuf:"bytes,3,opt,name=get_preference_result,json=getPreferenceResult,oneof" json:"get_preference_result,omitempty"`
 }
 type PreferencesResponse_Result_SetDefaultProfileResult_ struct {
-	SetDefaultProfileResult *PreferencesResponse_Result_SetDefaultProfileResult `protobuf:"bytes,4,opt,name=set_default_profile_result,json=setDefaultProfileResult,oneof"`
+	SetDefaultProfileResult *PreferencesResponse_Result_SetDefaultProfileResult `protobuf:"bytes,4,opt,name=set_default_profile_result,json=setDefaultProfileResult,oneof" json:"set_default_profile_result,omitempty"`
 }
 
 func (*PreferencesResponse_Result_UnrecognizedRequest) isPreferencesResponse_Result_Result()      {}
@@ -7075,116 +5129,14 @@ func (m *PreferencesResponse_Result) GetSetDefaultProfileResult() *PreferencesRe
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*PreferencesResponse_Result) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _PreferencesResponse_Result_OneofMarshaler, _PreferencesResponse_Result_OneofUnmarshaler, _PreferencesResponse_Result_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*PreferencesResponse_Result) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*PreferencesResponse_Result_UnrecognizedRequest)(nil),
 		(*PreferencesResponse_Result_SetPreferenceResult_)(nil),
 		(*PreferencesResponse_Result_GetPreferenceResult_)(nil),
 		(*PreferencesResponse_Result_SetDefaultProfileResult_)(nil),
 	}
-}
-
-func _PreferencesResponse_Result_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*PreferencesResponse_Result)
-	// result
-	switch x := m.Result.(type) {
-	case *PreferencesResponse_Result_UnrecognizedRequest:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.UnrecognizedRequest); err != nil {
-			return err
-		}
-	case *PreferencesResponse_Result_SetPreferenceResult_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetPreferenceResult); err != nil {
-			return err
-		}
-	case *PreferencesResponse_Result_GetPreferenceResult_:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GetPreferenceResult); err != nil {
-			return err
-		}
-	case *PreferencesResponse_Result_SetDefaultProfileResult_:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetDefaultProfileResult); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("PreferencesResponse_Result.Result has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _PreferencesResponse_Result_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*PreferencesResponse_Result)
-	switch tag {
-	case 1: // result.unrecognized_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesResponse_Result_UnrecognizedResult)
-		err := b.DecodeMessage(msg)
-		m.Result = &PreferencesResponse_Result_UnrecognizedRequest{msg}
-		return true, err
-	case 2: // result.set_preference_result
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesResponse_Result_SetPreferenceResult)
-		err := b.DecodeMessage(msg)
-		m.Result = &PreferencesResponse_Result_SetPreferenceResult_{msg}
-		return true, err
-	case 3: // result.get_preference_result
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesResponse_Result_GetPreferenceResult)
-		err := b.DecodeMessage(msg)
-		m.Result = &PreferencesResponse_Result_GetPreferenceResult_{msg}
-		return true, err
-	case 4: // result.set_default_profile_result
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PreferencesResponse_Result_SetDefaultProfileResult)
-		err := b.DecodeMessage(msg)
-		m.Result = &PreferencesResponse_Result_SetDefaultProfileResult_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _PreferencesResponse_Result_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*PreferencesResponse_Result)
-	// result
-	switch x := m.Result.(type) {
-	case *PreferencesResponse_Result_UnrecognizedRequest:
-		s := proto.Size(x.UnrecognizedRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PreferencesResponse_Result_SetPreferenceResult_:
-		s := proto.Size(x.SetPreferenceResult)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PreferencesResponse_Result_GetPreferenceResult_:
-		s := proto.Size(x.GetPreferenceResult)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PreferencesResponse_Result_SetDefaultProfileResult_:
-		s := proto.Size(x.SetDefaultProfileResult)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type PreferencesResponse_Result_SetPreferenceResult struct {
@@ -7510,16 +5462,16 @@ type isTmuxRequest_Payload interface {
 }
 
 type TmuxRequest_ListConnections_ struct {
-	ListConnections *TmuxRequest_ListConnections `protobuf:"bytes,1,opt,name=list_connections,json=listConnections,oneof"`
+	ListConnections *TmuxRequest_ListConnections `protobuf:"bytes,1,opt,name=list_connections,json=listConnections,oneof" json:"list_connections,omitempty"`
 }
 type TmuxRequest_SendCommand_ struct {
-	SendCommand *TmuxRequest_SendCommand `protobuf:"bytes,2,opt,name=send_command,json=sendCommand,oneof"`
+	SendCommand *TmuxRequest_SendCommand `protobuf:"bytes,2,opt,name=send_command,json=sendCommand,oneof" json:"send_command,omitempty"`
 }
 type TmuxRequest_SetWindowVisible_ struct {
-	SetWindowVisible *TmuxRequest_SetWindowVisible `protobuf:"bytes,3,opt,name=set_window_visible,json=setWindowVisible,oneof"`
+	SetWindowVisible *TmuxRequest_SetWindowVisible `protobuf:"bytes,3,opt,name=set_window_visible,json=setWindowVisible,oneof" json:"set_window_visible,omitempty"`
 }
 type TmuxRequest_CreateWindow_ struct {
-	CreateWindow *TmuxRequest_CreateWindow `protobuf:"bytes,4,opt,name=create_window,json=createWindow,oneof"`
+	CreateWindow *TmuxRequest_CreateWindow `protobuf:"bytes,4,opt,name=create_window,json=createWindow,oneof" json:"create_window,omitempty"`
 }
 
 func (*TmuxRequest_ListConnections_) isTmuxRequest_Payload()  {}
@@ -7562,116 +5514,14 @@ func (m *TmuxRequest) GetCreateWindow() *TmuxRequest_CreateWindow {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*TmuxRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _TmuxRequest_OneofMarshaler, _TmuxRequest_OneofUnmarshaler, _TmuxRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*TmuxRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*TmuxRequest_ListConnections_)(nil),
 		(*TmuxRequest_SendCommand_)(nil),
 		(*TmuxRequest_SetWindowVisible_)(nil),
 		(*TmuxRequest_CreateWindow_)(nil),
 	}
-}
-
-func _TmuxRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*TmuxRequest)
-	// payload
-	switch x := m.Payload.(type) {
-	case *TmuxRequest_ListConnections_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListConnections); err != nil {
-			return err
-		}
-	case *TmuxRequest_SendCommand_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SendCommand); err != nil {
-			return err
-		}
-	case *TmuxRequest_SetWindowVisible_:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetWindowVisible); err != nil {
-			return err
-		}
-	case *TmuxRequest_CreateWindow_:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CreateWindow); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("TmuxRequest.Payload has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _TmuxRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*TmuxRequest)
-	switch tag {
-	case 1: // payload.list_connections
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxRequest_ListConnections)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxRequest_ListConnections_{msg}
-		return true, err
-	case 2: // payload.send_command
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxRequest_SendCommand)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxRequest_SendCommand_{msg}
-		return true, err
-	case 3: // payload.set_window_visible
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxRequest_SetWindowVisible)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxRequest_SetWindowVisible_{msg}
-		return true, err
-	case 4: // payload.create_window
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxRequest_CreateWindow)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxRequest_CreateWindow_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _TmuxRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*TmuxRequest)
-	// payload
-	switch x := m.Payload.(type) {
-	case *TmuxRequest_ListConnections_:
-		s := proto.Size(x.ListConnections)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *TmuxRequest_SendCommand_:
-		s := proto.Size(x.SendCommand)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *TmuxRequest_SetWindowVisible_:
-		s := proto.Size(x.SetWindowVisible)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *TmuxRequest_CreateWindow_:
-		s := proto.Size(x.CreateWindow)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type TmuxRequest_ListConnections struct {
@@ -7892,16 +5742,16 @@ type isTmuxResponse_Payload interface {
 }
 
 type TmuxResponse_ListConnections_ struct {
-	ListConnections *TmuxResponse_ListConnections `protobuf:"bytes,1,opt,name=list_connections,json=listConnections,oneof"`
+	ListConnections *TmuxResponse_ListConnections `protobuf:"bytes,1,opt,name=list_connections,json=listConnections,oneof" json:"list_connections,omitempty"`
 }
 type TmuxResponse_SendCommand_ struct {
-	SendCommand *TmuxResponse_SendCommand `protobuf:"bytes,2,opt,name=send_command,json=sendCommand,oneof"`
+	SendCommand *TmuxResponse_SendCommand `protobuf:"bytes,2,opt,name=send_command,json=sendCommand,oneof" json:"send_command,omitempty"`
 }
 type TmuxResponse_SetWindowVisible_ struct {
-	SetWindowVisible *TmuxResponse_SetWindowVisible `protobuf:"bytes,3,opt,name=set_window_visible,json=setWindowVisible,oneof"`
+	SetWindowVisible *TmuxResponse_SetWindowVisible `protobuf:"bytes,3,opt,name=set_window_visible,json=setWindowVisible,oneof" json:"set_window_visible,omitempty"`
 }
 type TmuxResponse_CreateWindow_ struct {
-	CreateWindow *TmuxResponse_CreateWindow `protobuf:"bytes,5,opt,name=create_window,json=createWindow,oneof"`
+	CreateWindow *TmuxResponse_CreateWindow `protobuf:"bytes,5,opt,name=create_window,json=createWindow,oneof" json:"create_window,omitempty"`
 }
 
 func (*TmuxResponse_ListConnections_) isTmuxResponse_Payload()  {}
@@ -7951,116 +5801,14 @@ func (m *TmuxResponse) GetStatus() TmuxResponse_Status {
 	return TmuxResponse_OK
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*TmuxResponse) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _TmuxResponse_OneofMarshaler, _TmuxResponse_OneofUnmarshaler, _TmuxResponse_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*TmuxResponse) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*TmuxResponse_ListConnections_)(nil),
 		(*TmuxResponse_SendCommand_)(nil),
 		(*TmuxResponse_SetWindowVisible_)(nil),
 		(*TmuxResponse_CreateWindow_)(nil),
 	}
-}
-
-func _TmuxResponse_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*TmuxResponse)
-	// payload
-	switch x := m.Payload.(type) {
-	case *TmuxResponse_ListConnections_:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ListConnections); err != nil {
-			return err
-		}
-	case *TmuxResponse_SendCommand_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SendCommand); err != nil {
-			return err
-		}
-	case *TmuxResponse_SetWindowVisible_:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SetWindowVisible); err != nil {
-			return err
-		}
-	case *TmuxResponse_CreateWindow_:
-		_ = b.EncodeVarint(5<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CreateWindow); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("TmuxResponse.Payload has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _TmuxResponse_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*TmuxResponse)
-	switch tag {
-	case 1: // payload.list_connections
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxResponse_ListConnections)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxResponse_ListConnections_{msg}
-		return true, err
-	case 2: // payload.send_command
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxResponse_SendCommand)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxResponse_SendCommand_{msg}
-		return true, err
-	case 3: // payload.set_window_visible
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxResponse_SetWindowVisible)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxResponse_SetWindowVisible_{msg}
-		return true, err
-	case 5: // payload.create_window
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(TmuxResponse_CreateWindow)
-		err := b.DecodeMessage(msg)
-		m.Payload = &TmuxResponse_CreateWindow_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _TmuxResponse_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*TmuxResponse)
-	// payload
-	switch x := m.Payload.(type) {
-	case *TmuxResponse_ListConnections_:
-		s := proto.Size(x.ListConnections)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *TmuxResponse_SendCommand_:
-		s := proto.Size(x.SendCommand)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *TmuxResponse_SetWindowVisible_:
-		s := proto.Size(x.SetWindowVisible)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *TmuxResponse_CreateWindow_:
-		s := proto.Size(x.CreateWindow)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type TmuxResponse_ListConnections struct {
@@ -8680,10 +6428,10 @@ type isServerOriginatedRPCResultRequest_Result interface {
 }
 
 type ServerOriginatedRPCResultRequest_JsonException struct {
-	JsonException string `protobuf:"bytes,2,opt,name=json_exception,json=jsonException,oneof"`
+	JsonException string `protobuf:"bytes,2,opt,name=json_exception,json=jsonException,oneof" json:"json_exception,omitempty"`
 }
 type ServerOriginatedRPCResultRequest_JsonValue struct {
-	JsonValue string `protobuf:"bytes,3,opt,name=json_value,json=jsonValue,oneof"`
+	JsonValue string `protobuf:"bytes,3,opt,name=json_value,json=jsonValue,oneof" json:"json_value,omitempty"`
 }
 
 func (*ServerOriginatedRPCResultRequest_JsonException) isServerOriginatedRPCResultRequest_Result() {}
@@ -8717,70 +6465,12 @@ func (m *ServerOriginatedRPCResultRequest) GetJsonValue() string {
 	return ""
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*ServerOriginatedRPCResultRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _ServerOriginatedRPCResultRequest_OneofMarshaler, _ServerOriginatedRPCResultRequest_OneofUnmarshaler, _ServerOriginatedRPCResultRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*ServerOriginatedRPCResultRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*ServerOriginatedRPCResultRequest_JsonException)(nil),
 		(*ServerOriginatedRPCResultRequest_JsonValue)(nil),
 	}
-}
-
-func _ServerOriginatedRPCResultRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*ServerOriginatedRPCResultRequest)
-	// result
-	switch x := m.Result.(type) {
-	case *ServerOriginatedRPCResultRequest_JsonException:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.JsonException)
-	case *ServerOriginatedRPCResultRequest_JsonValue:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.JsonValue)
-	case nil:
-	default:
-		return fmt.Errorf("ServerOriginatedRPCResultRequest.Result has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _ServerOriginatedRPCResultRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*ServerOriginatedRPCResultRequest)
-	switch tag {
-	case 2: // result.json_exception
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Result = &ServerOriginatedRPCResultRequest_JsonException{x}
-		return true, err
-	case 3: // result.json_value
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Result = &ServerOriginatedRPCResultRequest_JsonValue{x}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _ServerOriginatedRPCResultRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*ServerOriginatedRPCResultRequest)
-	// result
-	switch x := m.Result.(type) {
-	case *ServerOriginatedRPCResultRequest_JsonException:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.JsonException)))
-		n += len(x.JsonException)
-	case *ServerOriginatedRPCResultRequest_JsonValue:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.JsonValue)))
-		n += len(x.JsonValue)
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 // This simply acknowledges receipt of ServerOriginatedRPCResultRequest.
@@ -9148,16 +6838,16 @@ type isVariableRequest_Scope interface {
 }
 
 type VariableRequest_SessionId struct {
-	SessionId string `protobuf:"bytes,1,opt,name=session_id,json=sessionId,oneof"`
+	SessionId string `protobuf:"bytes,1,opt,name=session_id,json=sessionId,oneof" json:"session_id,omitempty"`
 }
 type VariableRequest_TabId struct {
-	TabId string `protobuf:"bytes,4,opt,name=tab_id,json=tabId,oneof"`
+	TabId string `protobuf:"bytes,4,opt,name=tab_id,json=tabId,oneof" json:"tab_id,omitempty"`
 }
 type VariableRequest_App struct {
-	App bool `protobuf:"varint,5,opt,name=app,oneof"`
+	App bool `protobuf:"varint,5,opt,name=app,oneof" json:"app,omitempty"`
 }
 type VariableRequest_WindowId struct {
-	WindowId string `protobuf:"bytes,6,opt,name=window_id,json=windowId,oneof"`
+	WindowId string `protobuf:"bytes,6,opt,name=window_id,json=windowId,oneof" json:"window_id,omitempty"`
 }
 
 func (*VariableRequest_SessionId) isVariableRequest_Scope() {}
@@ -9214,103 +6904,14 @@ func (m *VariableRequest) GetGet() []string {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*VariableRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _VariableRequest_OneofMarshaler, _VariableRequest_OneofUnmarshaler, _VariableRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*VariableRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*VariableRequest_SessionId)(nil),
 		(*VariableRequest_TabId)(nil),
 		(*VariableRequest_App)(nil),
 		(*VariableRequest_WindowId)(nil),
 	}
-}
-
-func _VariableRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*VariableRequest)
-	// scope
-	switch x := m.Scope.(type) {
-	case *VariableRequest_SessionId:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.SessionId)
-	case *VariableRequest_TabId:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.TabId)
-	case *VariableRequest_App:
-		t := uint64(0)
-		if x.App {
-			t = 1
-		}
-		_ = b.EncodeVarint(5<<3 | proto.WireVarint)
-		_ = b.EncodeVarint(t)
-	case *VariableRequest_WindowId:
-		_ = b.EncodeVarint(6<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.WindowId)
-	case nil:
-	default:
-		return fmt.Errorf("VariableRequest.Scope has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _VariableRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*VariableRequest)
-	switch tag {
-	case 1: // scope.session_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Scope = &VariableRequest_SessionId{x}
-		return true, err
-	case 4: // scope.tab_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Scope = &VariableRequest_TabId{x}
-		return true, err
-	case 5: // scope.app
-		if wire != proto.WireVarint {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeVarint()
-		m.Scope = &VariableRequest_App{x != 0}
-		return true, err
-	case 6: // scope.window_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Scope = &VariableRequest_WindowId{x}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _VariableRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*VariableRequest)
-	// scope
-	switch x := m.Scope.(type) {
-	case *VariableRequest_SessionId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.SessionId)))
-		n += len(x.SessionId)
-	case *VariableRequest_TabId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.TabId)))
-		n += len(x.TabId)
-	case *VariableRequest_App:
-		n += 1 // tag and wire
-		n += 1
-	case *VariableRequest_WindowId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.WindowId)))
-		n += len(x.WindowId)
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type VariableRequest_Set struct {
@@ -9453,13 +7054,13 @@ type isActivateRequest_Identifier interface {
 }
 
 type ActivateRequest_WindowId struct {
-	WindowId string `protobuf:"bytes,1,opt,name=window_id,json=windowId,oneof"`
+	WindowId string `protobuf:"bytes,1,opt,name=window_id,json=windowId,oneof" json:"window_id,omitempty"`
 }
 type ActivateRequest_TabId struct {
-	TabId string `protobuf:"bytes,2,opt,name=tab_id,json=tabId,oneof"`
+	TabId string `protobuf:"bytes,2,opt,name=tab_id,json=tabId,oneof" json:"tab_id,omitempty"`
 }
 type ActivateRequest_SessionId struct {
-	SessionId string `protobuf:"bytes,3,opt,name=session_id,json=sessionId,oneof"`
+	SessionId string `protobuf:"bytes,3,opt,name=session_id,json=sessionId,oneof" json:"session_id,omitempty"`
 }
 
 func (*ActivateRequest_WindowId) isActivateRequest_Identifier()  {}
@@ -9522,85 +7123,13 @@ func (m *ActivateRequest) GetActivateApp() *ActivateRequest_App {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*ActivateRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _ActivateRequest_OneofMarshaler, _ActivateRequest_OneofUnmarshaler, _ActivateRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*ActivateRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*ActivateRequest_WindowId)(nil),
 		(*ActivateRequest_TabId)(nil),
 		(*ActivateRequest_SessionId)(nil),
 	}
-}
-
-func _ActivateRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*ActivateRequest)
-	// identifier
-	switch x := m.Identifier.(type) {
-	case *ActivateRequest_WindowId:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.WindowId)
-	case *ActivateRequest_TabId:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.TabId)
-	case *ActivateRequest_SessionId:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.SessionId)
-	case nil:
-	default:
-		return fmt.Errorf("ActivateRequest.Identifier has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _ActivateRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*ActivateRequest)
-	switch tag {
-	case 1: // identifier.window_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &ActivateRequest_WindowId{x}
-		return true, err
-	case 2: // identifier.tab_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &ActivateRequest_TabId{x}
-		return true, err
-	case 3: // identifier.session_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &ActivateRequest_SessionId{x}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _ActivateRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*ActivateRequest)
-	// identifier
-	switch x := m.Identifier.(type) {
-	case *ActivateRequest_WindowId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.WindowId)))
-		n += len(x.WindowId)
-	case *ActivateRequest_TabId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.TabId)))
-		n += len(x.TabId)
-	case *ActivateRequest_SessionId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.SessionId)))
-		n += len(x.SessionId)
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 // Activate the app?
@@ -9824,10 +7353,10 @@ type isGetPropertyRequest_Identifier interface {
 }
 
 type GetPropertyRequest_WindowId struct {
-	WindowId string `protobuf:"bytes,1,opt,name=window_id,json=windowId,oneof"`
+	WindowId string `protobuf:"bytes,1,opt,name=window_id,json=windowId,oneof" json:"window_id,omitempty"`
 }
 type GetPropertyRequest_SessionId struct {
-	SessionId string `protobuf:"bytes,3,opt,name=session_id,json=sessionId,oneof"`
+	SessionId string `protobuf:"bytes,3,opt,name=session_id,json=sessionId,oneof" json:"session_id,omitempty"`
 }
 
 func (*GetPropertyRequest_WindowId) isGetPropertyRequest_Identifier()  {}
@@ -9861,70 +7390,12 @@ func (m *GetPropertyRequest) GetName() string {
 	return ""
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*GetPropertyRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _GetPropertyRequest_OneofMarshaler, _GetPropertyRequest_OneofUnmarshaler, _GetPropertyRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*GetPropertyRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*GetPropertyRequest_WindowId)(nil),
 		(*GetPropertyRequest_SessionId)(nil),
 	}
-}
-
-func _GetPropertyRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*GetPropertyRequest)
-	// identifier
-	switch x := m.Identifier.(type) {
-	case *GetPropertyRequest_WindowId:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.WindowId)
-	case *GetPropertyRequest_SessionId:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.SessionId)
-	case nil:
-	default:
-		return fmt.Errorf("GetPropertyRequest.Identifier has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _GetPropertyRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*GetPropertyRequest)
-	switch tag {
-	case 1: // identifier.window_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &GetPropertyRequest_WindowId{x}
-		return true, err
-	case 3: // identifier.session_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &GetPropertyRequest_SessionId{x}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _GetPropertyRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*GetPropertyRequest)
-	// identifier
-	switch x := m.Identifier.(type) {
-	case *GetPropertyRequest_WindowId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.WindowId)))
-		n += len(x.WindowId)
-	case *GetPropertyRequest_SessionId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.SessionId)))
-		n += len(x.SessionId)
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type GetPropertyResponse struct {
@@ -10034,10 +7505,10 @@ type isSetPropertyRequest_Identifier interface {
 }
 
 type SetPropertyRequest_WindowId struct {
-	WindowId string `protobuf:"bytes,1,opt,name=window_id,json=windowId,oneof"`
+	WindowId string `protobuf:"bytes,1,opt,name=window_id,json=windowId,oneof" json:"window_id,omitempty"`
 }
 type SetPropertyRequest_SessionId struct {
-	SessionId string `protobuf:"bytes,5,opt,name=session_id,json=sessionId,oneof"`
+	SessionId string `protobuf:"bytes,5,opt,name=session_id,json=sessionId,oneof" json:"session_id,omitempty"`
 }
 
 func (*SetPropertyRequest_WindowId) isSetPropertyRequest_Identifier()  {}
@@ -10078,70 +7549,12 @@ func (m *SetPropertyRequest) GetJsonValue() string {
 	return ""
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*SetPropertyRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _SetPropertyRequest_OneofMarshaler, _SetPropertyRequest_OneofUnmarshaler, _SetPropertyRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*SetPropertyRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*SetPropertyRequest_WindowId)(nil),
 		(*SetPropertyRequest_SessionId)(nil),
 	}
-}
-
-func _SetPropertyRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*SetPropertyRequest)
-	// identifier
-	switch x := m.Identifier.(type) {
-	case *SetPropertyRequest_WindowId:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.WindowId)
-	case *SetPropertyRequest_SessionId:
-		_ = b.EncodeVarint(5<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.SessionId)
-	case nil:
-	default:
-		return fmt.Errorf("SetPropertyRequest.Identifier has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _SetPropertyRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*SetPropertyRequest)
-	switch tag {
-	case 1: // identifier.window_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &SetPropertyRequest_WindowId{x}
-		return true, err
-	case 5: // identifier.session_id
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Identifier = &SetPropertyRequest_SessionId{x}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _SetPropertyRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*SetPropertyRequest)
-	// identifier
-	switch x := m.Identifier.(type) {
-	case *SetPropertyRequest_WindowId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.WindowId)))
-		n += len(x.WindowId)
-	case *SetPropertyRequest_SessionId:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.SessionId)))
-		n += len(x.SessionId)
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type SetPropertyResponse struct {
@@ -10313,10 +7726,10 @@ type isRPCRegistrationRequest_RoleSpecificAttributes interface {
 }
 
 type RPCRegistrationRequest_SessionTitleAttributes_ struct {
-	SessionTitleAttributes *RPCRegistrationRequest_SessionTitleAttributes `protobuf:"bytes,7,opt,name=session_title_attributes,json=sessionTitleAttributes,oneof"`
+	SessionTitleAttributes *RPCRegistrationRequest_SessionTitleAttributes `protobuf:"bytes,7,opt,name=session_title_attributes,json=sessionTitleAttributes,oneof" json:"session_title_attributes,omitempty"`
 }
 type RPCRegistrationRequest_StatusBarComponentAttributes_ struct {
-	StatusBarComponentAttributes *RPCRegistrationRequest_StatusBarComponentAttributes `protobuf:"bytes,8,opt,name=status_bar_component_attributes,json=statusBarComponentAttributes,oneof"`
+	StatusBarComponentAttributes *RPCRegistrationRequest_StatusBarComponentAttributes `protobuf:"bytes,8,opt,name=status_bar_component_attributes,json=statusBarComponentAttributes,oneof" json:"status_bar_component_attributes,omitempty"`
 }
 
 func (*RPCRegistrationRequest_SessionTitleAttributes_) isRPCRegistrationRequest_RoleSpecificAttributes() {
@@ -10388,78 +7801,12 @@ func (m *RPCRegistrationRequest) GetDisplayName() string {
 	return ""
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*RPCRegistrationRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _RPCRegistrationRequest_OneofMarshaler, _RPCRegistrationRequest_OneofUnmarshaler, _RPCRegistrationRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*RPCRegistrationRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*RPCRegistrationRequest_SessionTitleAttributes_)(nil),
 		(*RPCRegistrationRequest_StatusBarComponentAttributes_)(nil),
 	}
-}
-
-func _RPCRegistrationRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*RPCRegistrationRequest)
-	// RoleSpecificAttributes
-	switch x := m.RoleSpecificAttributes.(type) {
-	case *RPCRegistrationRequest_SessionTitleAttributes_:
-		_ = b.EncodeVarint(7<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.SessionTitleAttributes); err != nil {
-			return err
-		}
-	case *RPCRegistrationRequest_StatusBarComponentAttributes_:
-		_ = b.EncodeVarint(8<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.StatusBarComponentAttributes); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("RPCRegistrationRequest.RoleSpecificAttributes has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _RPCRegistrationRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*RPCRegistrationRequest)
-	switch tag {
-	case 7: // RoleSpecificAttributes.session_title_attributes
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RPCRegistrationRequest_SessionTitleAttributes)
-		err := b.DecodeMessage(msg)
-		m.RoleSpecificAttributes = &RPCRegistrationRequest_SessionTitleAttributes_{msg}
-		return true, err
-	case 8: // RoleSpecificAttributes.status_bar_component_attributes
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RPCRegistrationRequest_StatusBarComponentAttributes)
-		err := b.DecodeMessage(msg)
-		m.RoleSpecificAttributes = &RPCRegistrationRequest_StatusBarComponentAttributes_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _RPCRegistrationRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*RPCRegistrationRequest)
-	// RoleSpecificAttributes
-	switch x := m.RoleSpecificAttributes.(type) {
-	case *RPCRegistrationRequest_SessionTitleAttributes_:
-		s := proto.Size(x.SessionTitleAttributes)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *RPCRegistrationRequest_StatusBarComponentAttributes_:
-		s := proto.Size(x.StatusBarComponentAttributes)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type RPCRegistrationRequest_RPCArgumentSignature struct {
@@ -11195,22 +8542,22 @@ type isNotificationRequest_Arguments interface {
 }
 
 type NotificationRequest_RpcRegistrationRequest struct {
-	RpcRegistrationRequest *RPCRegistrationRequest `protobuf:"bytes,4,opt,name=rpc_registration_request,json=rpcRegistrationRequest,oneof"`
+	RpcRegistrationRequest *RPCRegistrationRequest `protobuf:"bytes,4,opt,name=rpc_registration_request,json=rpcRegistrationRequest,oneof" json:"rpc_registration_request,omitempty"`
 }
 type NotificationRequest_KeystrokeMonitorRequest struct {
-	KeystrokeMonitorRequest *KeystrokeMonitorRequest `protobuf:"bytes,5,opt,name=keystroke_monitor_request,json=keystrokeMonitorRequest,oneof"`
+	KeystrokeMonitorRequest *KeystrokeMonitorRequest `protobuf:"bytes,5,opt,name=keystroke_monitor_request,json=keystrokeMonitorRequest,oneof" json:"keystroke_monitor_request,omitempty"`
 }
 type NotificationRequest_VariableMonitorRequest struct {
-	VariableMonitorRequest *VariableMonitorRequest `protobuf:"bytes,6,opt,name=variable_monitor_request,json=variableMonitorRequest,oneof"`
+	VariableMonitorRequest *VariableMonitorRequest `protobuf:"bytes,6,opt,name=variable_monitor_request,json=variableMonitorRequest,oneof" json:"variable_monitor_request,omitempty"`
 }
 type NotificationRequest_ProfileChangeRequest struct {
-	ProfileChangeRequest *ProfileChangeRequest `protobuf:"bytes,7,opt,name=profile_change_request,json=profileChangeRequest,oneof"`
+	ProfileChangeRequest *ProfileChangeRequest `protobuf:"bytes,7,opt,name=profile_change_request,json=profileChangeRequest,oneof" json:"profile_change_request,omitempty"`
 }
 type NotificationRequest_KeystrokeFilterRequest struct {
-	KeystrokeFilterRequest *KeystrokeFilterRequest `protobuf:"bytes,8,opt,name=keystroke_filter_request,json=keystrokeFilterRequest,oneof"`
+	KeystrokeFilterRequest *KeystrokeFilterRequest `protobuf:"bytes,8,opt,name=keystroke_filter_request,json=keystrokeFilterRequest,oneof" json:"keystroke_filter_request,omitempty"`
 }
 type NotificationRequest_PromptMonitorRequest struct {
-	PromptMonitorRequest *PromptMonitorRequest `protobuf:"bytes,9,opt,name=prompt_monitor_request,json=promptMonitorRequest,oneof"`
+	PromptMonitorRequest *PromptMonitorRequest `protobuf:"bytes,9,opt,name=prompt_monitor_request,json=promptMonitorRequest,oneof" json:"prompt_monitor_request,omitempty"`
 }
 
 func (*NotificationRequest_RpcRegistrationRequest) isNotificationRequest_Arguments()  {}
@@ -11290,9 +8637,9 @@ func (m *NotificationRequest) GetPromptMonitorRequest() *PromptMonitorRequest {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*NotificationRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _NotificationRequest_OneofMarshaler, _NotificationRequest_OneofUnmarshaler, _NotificationRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*NotificationRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*NotificationRequest_RpcRegistrationRequest)(nil),
 		(*NotificationRequest_KeystrokeMonitorRequest)(nil),
 		(*NotificationRequest_VariableMonitorRequest)(nil),
@@ -11300,144 +8647,6 @@ func (*NotificationRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.B
 		(*NotificationRequest_KeystrokeFilterRequest)(nil),
 		(*NotificationRequest_PromptMonitorRequest)(nil),
 	}
-}
-
-func _NotificationRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*NotificationRequest)
-	// arguments
-	switch x := m.Arguments.(type) {
-	case *NotificationRequest_RpcRegistrationRequest:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.RpcRegistrationRequest); err != nil {
-			return err
-		}
-	case *NotificationRequest_KeystrokeMonitorRequest:
-		_ = b.EncodeVarint(5<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.KeystrokeMonitorRequest); err != nil {
-			return err
-		}
-	case *NotificationRequest_VariableMonitorRequest:
-		_ = b.EncodeVarint(6<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.VariableMonitorRequest); err != nil {
-			return err
-		}
-	case *NotificationRequest_ProfileChangeRequest:
-		_ = b.EncodeVarint(7<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.ProfileChangeRequest); err != nil {
-			return err
-		}
-	case *NotificationRequest_KeystrokeFilterRequest:
-		_ = b.EncodeVarint(8<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.KeystrokeFilterRequest); err != nil {
-			return err
-		}
-	case *NotificationRequest_PromptMonitorRequest:
-		_ = b.EncodeVarint(9<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.PromptMonitorRequest); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("NotificationRequest.Arguments has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _NotificationRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*NotificationRequest)
-	switch tag {
-	case 4: // arguments.rpc_registration_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(RPCRegistrationRequest)
-		err := b.DecodeMessage(msg)
-		m.Arguments = &NotificationRequest_RpcRegistrationRequest{msg}
-		return true, err
-	case 5: // arguments.keystroke_monitor_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(KeystrokeMonitorRequest)
-		err := b.DecodeMessage(msg)
-		m.Arguments = &NotificationRequest_KeystrokeMonitorRequest{msg}
-		return true, err
-	case 6: // arguments.variable_monitor_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(VariableMonitorRequest)
-		err := b.DecodeMessage(msg)
-		m.Arguments = &NotificationRequest_VariableMonitorRequest{msg}
-		return true, err
-	case 7: // arguments.profile_change_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(ProfileChangeRequest)
-		err := b.DecodeMessage(msg)
-		m.Arguments = &NotificationRequest_ProfileChangeRequest{msg}
-		return true, err
-	case 8: // arguments.keystroke_filter_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(KeystrokeFilterRequest)
-		err := b.DecodeMessage(msg)
-		m.Arguments = &NotificationRequest_KeystrokeFilterRequest{msg}
-		return true, err
-	case 9: // arguments.prompt_monitor_request
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PromptMonitorRequest)
-		err := b.DecodeMessage(msg)
-		m.Arguments = &NotificationRequest_PromptMonitorRequest{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _NotificationRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*NotificationRequest)
-	// arguments
-	switch x := m.Arguments.(type) {
-	case *NotificationRequest_RpcRegistrationRequest:
-		s := proto.Size(x.RpcRegistrationRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *NotificationRequest_KeystrokeMonitorRequest:
-		s := proto.Size(x.KeystrokeMonitorRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *NotificationRequest_VariableMonitorRequest:
-		s := proto.Size(x.VariableMonitorRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *NotificationRequest_ProfileChangeRequest:
-		s := proto.Size(x.ProfileChangeRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *NotificationRequest_KeystrokeFilterRequest:
-		s := proto.Size(x.KeystrokeFilterRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *NotificationRequest_PromptMonitorRequest:
-		s := proto.Size(x.PromptMonitorRequest)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type NotificationResponse struct {
@@ -12154,13 +9363,13 @@ type isPromptNotification_Event interface {
 }
 
 type PromptNotification_Prompt struct {
-	Prompt *PromptNotificationPrompt `protobuf:"bytes,2,opt,name=prompt,oneof"`
+	Prompt *PromptNotificationPrompt `protobuf:"bytes,2,opt,name=prompt,oneof" json:"prompt,omitempty"`
 }
 type PromptNotification_CommandStart struct {
-	CommandStart *PromptNotificationCommandStart `protobuf:"bytes,3,opt,name=command_start,json=commandStart,oneof"`
+	CommandStart *PromptNotificationCommandStart `protobuf:"bytes,3,opt,name=command_start,json=commandStart,oneof" json:"command_start,omitempty"`
 }
 type PromptNotification_CommandEnd struct {
-	CommandEnd *PromptNotificationCommandEnd `protobuf:"bytes,4,opt,name=command_end,json=commandEnd,oneof"`
+	CommandEnd *PromptNotificationCommandEnd `protobuf:"bytes,4,opt,name=command_end,json=commandEnd,oneof" json:"command_end,omitempty"`
 }
 
 func (*PromptNotification_Prompt) isPromptNotification_Event()       {}
@@ -12202,97 +9411,13 @@ func (m *PromptNotification) GetCommandEnd() *PromptNotificationCommandEnd {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*PromptNotification) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _PromptNotification_OneofMarshaler, _PromptNotification_OneofUnmarshaler, _PromptNotification_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*PromptNotification) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*PromptNotification_Prompt)(nil),
 		(*PromptNotification_CommandStart)(nil),
 		(*PromptNotification_CommandEnd)(nil),
 	}
-}
-
-func _PromptNotification_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*PromptNotification)
-	// event
-	switch x := m.Event.(type) {
-	case *PromptNotification_Prompt:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Prompt); err != nil {
-			return err
-		}
-	case *PromptNotification_CommandStart:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CommandStart); err != nil {
-			return err
-		}
-	case *PromptNotification_CommandEnd:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.CommandEnd); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("PromptNotification.Event has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _PromptNotification_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*PromptNotification)
-	switch tag {
-	case 2: // event.prompt
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PromptNotificationPrompt)
-		err := b.DecodeMessage(msg)
-		m.Event = &PromptNotification_Prompt{msg}
-		return true, err
-	case 3: // event.command_start
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PromptNotificationCommandStart)
-		err := b.DecodeMessage(msg)
-		m.Event = &PromptNotification_CommandStart{msg}
-		return true, err
-	case 4: // event.command_end
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(PromptNotificationCommandEnd)
-		err := b.DecodeMessage(msg)
-		m.Event = &PromptNotification_CommandEnd{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _PromptNotification_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*PromptNotification)
-	// event
-	switch x := m.Event.(type) {
-	case *PromptNotification_Prompt:
-		s := proto.Size(x.Prompt)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PromptNotification_CommandStart:
-		s := proto.Size(x.CommandStart)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *PromptNotification_CommandEnd:
-		s := proto.Size(x.CommandEnd)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type LocationChangeNotification struct {
@@ -12495,16 +9620,16 @@ type isFocusChangedNotification_Event interface {
 }
 
 type FocusChangedNotification_ApplicationActive struct {
-	ApplicationActive bool `protobuf:"varint,1,opt,name=application_active,json=applicationActive,oneof"`
+	ApplicationActive bool `protobuf:"varint,1,opt,name=application_active,json=applicationActive,oneof" json:"application_active,omitempty"`
 }
 type FocusChangedNotification_Window_ struct {
-	Window *FocusChangedNotification_Window `protobuf:"bytes,2,opt,name=window,oneof"`
+	Window *FocusChangedNotification_Window `protobuf:"bytes,2,opt,name=window,oneof" json:"window,omitempty"`
 }
 type FocusChangedNotification_SelectedTab struct {
-	SelectedTab string `protobuf:"bytes,3,opt,name=selected_tab,json=selectedTab,oneof"`
+	SelectedTab string `protobuf:"bytes,3,opt,name=selected_tab,json=selectedTab,oneof" json:"selected_tab,omitempty"`
 }
 type FocusChangedNotification_Session struct {
-	Session string `protobuf:"bytes,4,opt,name=session,oneof"`
+	Session string `protobuf:"bytes,4,opt,name=session,oneof" json:"session,omitempty"`
 }
 
 func (*FocusChangedNotification_ApplicationActive) isFocusChangedNotification_Event() {}
@@ -12547,107 +9672,14 @@ func (m *FocusChangedNotification) GetSession() string {
 	return ""
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*FocusChangedNotification) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _FocusChangedNotification_OneofMarshaler, _FocusChangedNotification_OneofUnmarshaler, _FocusChangedNotification_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*FocusChangedNotification) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*FocusChangedNotification_ApplicationActive)(nil),
 		(*FocusChangedNotification_Window_)(nil),
 		(*FocusChangedNotification_SelectedTab)(nil),
 		(*FocusChangedNotification_Session)(nil),
 	}
-}
-
-func _FocusChangedNotification_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*FocusChangedNotification)
-	// event
-	switch x := m.Event.(type) {
-	case *FocusChangedNotification_ApplicationActive:
-		t := uint64(0)
-		if x.ApplicationActive {
-			t = 1
-		}
-		_ = b.EncodeVarint(1<<3 | proto.WireVarint)
-		_ = b.EncodeVarint(t)
-	case *FocusChangedNotification_Window_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Window); err != nil {
-			return err
-		}
-	case *FocusChangedNotification_SelectedTab:
-		_ = b.EncodeVarint(3<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.SelectedTab)
-	case *FocusChangedNotification_Session:
-		_ = b.EncodeVarint(4<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.Session)
-	case nil:
-	default:
-		return fmt.Errorf("FocusChangedNotification.Event has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _FocusChangedNotification_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*FocusChangedNotification)
-	switch tag {
-	case 1: // event.application_active
-		if wire != proto.WireVarint {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeVarint()
-		m.Event = &FocusChangedNotification_ApplicationActive{x != 0}
-		return true, err
-	case 2: // event.window
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(FocusChangedNotification_Window)
-		err := b.DecodeMessage(msg)
-		m.Event = &FocusChangedNotification_Window_{msg}
-		return true, err
-	case 3: // event.selected_tab
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Event = &FocusChangedNotification_SelectedTab{x}
-		return true, err
-	case 4: // event.session
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Event = &FocusChangedNotification_Session{x}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _FocusChangedNotification_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*FocusChangedNotification)
-	// event
-	switch x := m.Event.(type) {
-	case *FocusChangedNotification_ApplicationActive:
-		n += 1 // tag and wire
-		n += 1
-	case *FocusChangedNotification_Window_:
-		s := proto.Size(x.Window)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *FocusChangedNotification_SelectedTab:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.SelectedTab)))
-		n += len(x.SelectedTab)
-	case *FocusChangedNotification_Session:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.Session)))
-		n += len(x.Session)
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type FocusChangedNotification_Window struct {
@@ -13218,10 +10250,10 @@ type isSetProfilePropertyRequest_Target interface {
 }
 
 type SetProfilePropertyRequest_Session struct {
-	Session string `protobuf:"bytes,1,opt,name=session,oneof"`
+	Session string `protobuf:"bytes,1,opt,name=session,oneof" json:"session,omitempty"`
 }
 type SetProfilePropertyRequest_GuidList_ struct {
-	GuidList *SetProfilePropertyRequest_GuidList `protobuf:"bytes,2,opt,name=guid_list,json=guidList,oneof"`
+	GuidList *SetProfilePropertyRequest_GuidList `protobuf:"bytes,2,opt,name=guid_list,json=guidList,oneof" json:"guid_list,omitempty"`
 }
 
 func (*SetProfilePropertyRequest_Session) isSetProfilePropertyRequest_Target()   {}
@@ -13269,74 +10301,12 @@ func (m *SetProfilePropertyRequest) GetAssignments() []*SetProfilePropertyReques
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*SetProfilePropertyRequest) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _SetProfilePropertyRequest_OneofMarshaler, _SetProfilePropertyRequest_OneofUnmarshaler, _SetProfilePropertyRequest_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*SetProfilePropertyRequest) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*SetProfilePropertyRequest_Session)(nil),
 		(*SetProfilePropertyRequest_GuidList_)(nil),
 	}
-}
-
-func _SetProfilePropertyRequest_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*SetProfilePropertyRequest)
-	// target
-	switch x := m.Target.(type) {
-	case *SetProfilePropertyRequest_Session:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		_ = b.EncodeStringBytes(x.Session)
-	case *SetProfilePropertyRequest_GuidList_:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.GuidList); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("SetProfilePropertyRequest.Target has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _SetProfilePropertyRequest_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*SetProfilePropertyRequest)
-	switch tag {
-	case 1: // target.session
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		x, err := b.DecodeStringBytes()
-		m.Target = &SetProfilePropertyRequest_Session{x}
-		return true, err
-	case 2: // target.guid_list
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SetProfilePropertyRequest_GuidList)
-		err := b.DecodeMessage(msg)
-		m.Target = &SetProfilePropertyRequest_GuidList_{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _SetProfilePropertyRequest_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*SetProfilePropertyRequest)
-	// target
-	switch x := m.Target.(type) {
-	case *SetProfilePropertyRequest_Session:
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(len(x.Session)))
-		n += len(x.Session)
-	case *SetProfilePropertyRequest_GuidList_:
-		s := proto.Size(x.GuidList)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type SetProfilePropertyRequest_GuidList struct {
@@ -14319,10 +11289,10 @@ type isSplitTreeNode_SplitTreeLink_Child interface {
 }
 
 type SplitTreeNode_SplitTreeLink_Session struct {
-	Session *SessionSummary `protobuf:"bytes,1,opt,name=session,oneof"`
+	Session *SessionSummary `protobuf:"bytes,1,opt,name=session,oneof" json:"session,omitempty"`
 }
 type SplitTreeNode_SplitTreeLink_Node struct {
-	Node *SplitTreeNode `protobuf:"bytes,2,opt,name=node,oneof"`
+	Node *SplitTreeNode `protobuf:"bytes,2,opt,name=node,oneof" json:"node,omitempty"`
 }
 
 func (*SplitTreeNode_SplitTreeLink_Session) isSplitTreeNode_SplitTreeLink_Child() {}
@@ -14349,78 +11319,12 @@ func (m *SplitTreeNode_SplitTreeLink) GetNode() *SplitTreeNode {
 	return nil
 }
 
-// XXX_OneofFuncs is for the internal use of the proto package.
-func (*SplitTreeNode_SplitTreeLink) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
-	return _SplitTreeNode_SplitTreeLink_OneofMarshaler, _SplitTreeNode_SplitTreeLink_OneofUnmarshaler, _SplitTreeNode_SplitTreeLink_OneofSizer, []interface{}{
+// XXX_OneofWrappers is for the internal use of the proto package.
+func (*SplitTreeNode_SplitTreeLink) XXX_OneofWrappers() []interface{} {
+	return []interface{}{
 		(*SplitTreeNode_SplitTreeLink_Session)(nil),
 		(*SplitTreeNode_SplitTreeLink_Node)(nil),
 	}
-}
-
-func _SplitTreeNode_SplitTreeLink_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
-	m := msg.(*SplitTreeNode_SplitTreeLink)
-	// child
-	switch x := m.Child.(type) {
-	case *SplitTreeNode_SplitTreeLink_Session:
-		_ = b.EncodeVarint(1<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Session); err != nil {
-			return err
-		}
-	case *SplitTreeNode_SplitTreeLink_Node:
-		_ = b.EncodeVarint(2<<3 | proto.WireBytes)
-		if err := b.EncodeMessage(x.Node); err != nil {
-			return err
-		}
-	case nil:
-	default:
-		return fmt.Errorf("SplitTreeNode_SplitTreeLink.Child has unexpected type %T", x)
-	}
-	return nil
-}
-
-func _SplitTreeNode_SplitTreeLink_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
-	m := msg.(*SplitTreeNode_SplitTreeLink)
-	switch tag {
-	case 1: // child.session
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SessionSummary)
-		err := b.DecodeMessage(msg)
-		m.Child = &SplitTreeNode_SplitTreeLink_Session{msg}
-		return true, err
-	case 2: // child.node
-		if wire != proto.WireBytes {
-			return true, proto.ErrInternalBadWireType
-		}
-		msg := new(SplitTreeNode)
-		err := b.DecodeMessage(msg)
-		m.Child = &SplitTreeNode_SplitTreeLink_Node{msg}
-		return true, err
-	default:
-		return false, nil
-	}
-}
-
-func _SplitTreeNode_SplitTreeLink_OneofSizer(msg proto.Message) (n int) {
-	m := msg.(*SplitTreeNode_SplitTreeLink)
-	// child
-	switch x := m.Child.(type) {
-	case *SplitTreeNode_SplitTreeLink_Session:
-		s := proto.Size(x.Session)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case *SplitTreeNode_SplitTreeLink_Node:
-		s := proto.Size(x.Node)
-		n += 1 // tag and wire
-		n += proto.SizeVarint(uint64(s))
-		n += s
-	case nil:
-	default:
-		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
-	}
-	return n
 }
 
 type ListSessionsResponse struct {

@@ -19,5 +19,35 @@ func main() {
 		os.Exit(1)
 	}
 	i.Logger(logger)
-	fmt.Println(i.ListSessions(&api.ListSessionsRequest{}))
+	sessions, err := i.ListSessions(&api.ListSessionsRequest{})
+	if err != nil {
+		panic(err)
+	}
+	i.SubscribeNewSessionNotifications(func(n *api.NewSessionNotification) error {
+		fmt.Println(n.String())
+		return nil
+	})
+	fmt.Println(i.RegisterNotifier(iterm2.TerminateSessionNotifier(func(n *api.TerminateSessionNotification) error {
+		fmt.Println(n.String())
+		return nil
+	})))
+
+	for _, w := range sessions.GetWindows() {
+		for _, t := range w.GetTabs() {
+			for _, s := range t.GetRoot().GetLinks() {
+				i.SubscribePromptMonitorNotifications(s.GetSession(), &api.PromptMonitorRequest{
+					Modes: []api.PromptMonitorMode{api.PromptMonitorMode_COMMAND_START, api.PromptMonitorMode_COMMAND_END, api.PromptMonitorMode_PROMPT},
+				}, func(n *api.PromptNotification) error {
+					fmt.Println(n.String())
+					return nil
+				})
+				// i.SubscribeScreenUpdateNotifications(s.GetSession(), func(n *api.ScreenUpdateNotification) error {
+				// 	fmt.Println(n.String())
+				// 	return nil
+				// })
+			}
+		}
+	}
+	<-make(chan interface{})
+	//i.ServerOriginatedRpcResult(&api.RPCRegistrationRequest{})
 }
