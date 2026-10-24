@@ -4,7 +4,7 @@ go 1.27
 
 require (
 	github.com/gogo/protobuf v1.3.0
-	github.com/gorilla/websocket v1.5.0
+	github.com/gorilla/websocket v1.5.3
 	github.com/sirupsen/logrus v1.4.2
 )
 
