@@ -5,7 +5,7 @@ go 1.27
 require (
 	github.com/gogo/protobuf v1.3.0
 	github.com/gorilla/websocket v1.5.3
-	github.com/sirupsen/logrus v1.9.4
+	github.com/sirupsen/logrus v1.10.2
 )
 
 require golang.org/x/sys v0.49.0 // indirect
