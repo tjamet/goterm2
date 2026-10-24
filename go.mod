@@ -3,7 +3,7 @@ module github.com/tjamet/goterm2
 go 1.27
 
 require (
-	github.com/gogo/protobuf v1.3.0
+	github.com/gogo/protobuf v1.3.2
 	github.com/gorilla/websocket v1.5.3
 	github.com/sirupsen/logrus v1.10.2
 )
