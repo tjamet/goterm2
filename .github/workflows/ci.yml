@@ -17,11 +17,7 @@ jobs:
 
       - uses: actions/setup-go@v5
         with:
-          # go.mod still says `go 1.12`, and that toolchain cannot parse the
-          # runner's GOPROXY (`url|direct`). A newer toolchain builds a 1.12
-          # module fine. The final dependency-bump hop switches back to
-          # `go-version-file: go.mod`.
-          go-version: '1.27.x'
+          go-version-file: go.mod
           cache: true
 
       - name: Vet
